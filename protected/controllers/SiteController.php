@@ -36,10 +36,17 @@ class SiteController extends Controller
 	 * 前台发起一个投票
 	 */
 	public function actionAdd() {
-		$vote = new Vote();
-		$this->render('add',array(
-				'model' => $vote
-				));
+		if(isset($_POST['Vote'])) {
+			$vote = new Vote();
+			$vote->setAttributes($_POST['Vote']);
+			$vote->save();
+			echo 'success';
+		} else {
+			$vote = new Vote();
+			$this->render('add',array(
+					'model' => $vote
+					));
+		}
 	}
 		
 	/**
@@ -47,20 +54,64 @@ class SiteController extends Controller
 	 */
 	public function actionView() {
 		
+		$page = $_GET['page'];
+		//最热
+		if($page == 'hot') {
+			$vote = new Vote();
+			$votes = $vote->findAll();
+		//最新
+		} else if($page == 'new') {
+			$vote = new Vote();
+			$votes = $vote->findAll();
+		//所有
+		} else {
+			$vote = new Vote();
+			$votes = $vote->findAll();
+		} 
+		$this->render('view', array(
+				'models' => $votes
+				));
+		
 	}
 	
 	/**
 	 * 用户投票
 	 */
 	public function actionVote() {
-		
+		if(isset($_POST['Vote'])) {
+			$vote = new Vote();
+			$vote->setAttributes($_POST['Vote']);
+			$vote->save();
+			echo 'success';
+		} else {
+			$vote = new Vote();
+			$this->render('vote',array(
+					'model' => $vote
+			));
+		}
 	}
 	
 	/**
 	 * 查询所有投票（最新，最热，投票分类查询）
 	 */
 	public function actionLists() {
-		
+		$page = $_GET['page'];
+		//最新
+		if($page == 'hot') {
+			$vote = new Vote();
+			$votes = $vote->findAll();
+		//最热	
+		} else if($page == 'new') {
+			$vote = new Vote();
+			$votes = $vote->findAll();
+		//按分类显示
+		} else if($page == 'all') {
+			$vote = new Vote();
+			$votes = $vote->findAll();
+		} 
+		$this->render('view', array(
+				'models' => $votes
+		));
 	}
 
 

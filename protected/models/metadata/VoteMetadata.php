@@ -40,9 +40,6 @@ class VoteMetadata extends CARMDC
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'voteCateRelateds' => array(self::HAS_MANY, 'TblVoteCateRelated', 'vote_id'),
-			'voteItems' => array(self::HAS_MANY, 'TblVoteItem', 'vote_id'),
-			'voteOperateLogs' => array(self::HAS_MANY, 'TblVoteOperateLog', 'vote_id'),
 		);
 	}
 

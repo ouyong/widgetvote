@@ -57,6 +57,9 @@ class Vote extends ActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array_merge(parent::relations(), array(
+			'voteCateRelateds' => array(CActiveRecord::HAS_MANY, 'TblVoteCateRelated', 'vote_id'),
+			'voteItems' => array(CActiveRecord::HAS_MANY, 'TblVoteItem', 'vote_id'),
+			'voteOperateLogs' => array(CActiveRecord::HAS_MANY, 'TblVoteOperateLog', 'vote_id'),
 		));
 	}
 	

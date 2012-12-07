@@ -43,6 +43,8 @@ class VoteCateRelated extends ActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array_merge(parent::relations(), array(
+				'vote' => array(ActiveRecord::BELONGS_TO, 'TblVote', 'vote_id'),
+				'category' => array(ActiveRecord::BELONGS_TO, 'TblVoteCategory', 'category_id'),
 		));
 	}
 	

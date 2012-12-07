@@ -1,0 +1,4 @@
+2012/12/06 15:33:00 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'grade.tbl_vote' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `tbl_vote`.
+in D:\warp\wamp\www\syslib\giiadv\generators\model\ModelCode.php (205)
+in D:\warp\wamp\www\syslib\giiadv\generators\model\ModelCode.php (160)
+in D:\warp\wamp\www\widgetvote\index.php (13)
