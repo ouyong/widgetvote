@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<buildpath>
+	<buildpathentry kind="con" path="org.eclipse.php.core.LANGUAGE"/>
+	<buildpathentry external="true" kind="lib" path="C:/Documents and Settings/Administrator/桌面/【框架-数据对象文档】数据对象的关联录入_杨东其_120308/【框架-数据对象文档】数据对象的关联录入_杨东其_120308/syslib"/>
+	<buildpathentry kind="con" path="org.eclipse.dltk.USER_LIBRARY/yii"/>
+	<buildpathentry kind="src" path=""/>
+</buildpath>

@@ -1,0 +1,41 @@
+评分-grade
+ControllerActions：
+	SiteController：前台
+		view查看前四个投票（按最新，最热）
+		vote用户投票
+		lists查询所有投票（最新，最热，投票分类查询）
+		add发起一个投票
+		
+		
+
+	AdminController：后台
+		add发起一个投票
+			
+	AuditController：审核
+		vlists查看评分审核列表
+		vapprove评分审核，审核通过，不通过
+		search根据条件搜索投票(根据：标题、发起人、审批人、发起时间、审批时间、审批状态、跟随词条、跟随分类)
+		update修改一个投票所有投票项的投票数
+		log查看后台操作日志
+		category显示投票选择的分类
+
+	IndependentController：投票独立运营页
+		lists显示所有有投票的违禁词
+		add添加新违禁词
+		update修改违禁词
+		delete删除违禁词
+		search搜索违禁词（根据：违禁词，添加时间，添加人）
+		import导入新违禁词（批量）
+
+	SourceController：数据源
+		vote将四个投票数据对象转换成xml数据
+	
+
+					
+	APIController：API
+			
+	AjaxController：ajax请求
+		image：上传图片，为投票添加图片
+		item：添加投票项，功能添加、上移、下移、删除
+
+		
