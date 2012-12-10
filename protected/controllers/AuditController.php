@@ -11,7 +11,7 @@ class AuditController extends Controller {
 		$vote = new Vote();
 		$votes = $vote->listbyid()->search();
 		$this->render('vlists', array(
-				'model' => $votes
+				'models' => $votes
 				));
 		
 	}

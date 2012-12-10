@@ -48,7 +48,7 @@ class VoteCateRelatedMetadata extends CARMDC
 		return array(
 			'id' => '主键',
 			'vote_id' => 'Vote',
-			'category_id' => '分类id',
+			'category_id' => '跟随分类',
 		);
 	}
 }

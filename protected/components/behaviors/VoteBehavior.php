@@ -11,6 +11,8 @@ class VoteBehavior extends CActiveRecordBehavior {
 				$result = $file->saveAs(Yii::app()->basePath.'/../upload/'.$randName);
 				$owner->picpath = '/upload/'.$randName;
 				$owner->counts = 0;
+				$owner->audittype = 0;
+				$owner->auditstate = 0;
 				$owner->createtime = date('Y-m-d H:i:s',time());
 			}
 		} else {

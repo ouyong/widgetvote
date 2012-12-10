@@ -152,4 +152,16 @@ class Vote extends ActiveRecord
 		));
 	}
 	
+	public function getCategory($id) {
+		$vote = new Vote();
+		$vote = $vote->findByPk($id);
+		$voteCateRelateds = $vote->voteCateRelateds;
+		foreach ($voteCateRelateds as $voteCateRelated) {
+			$category = $voteCateRelated->category;
+			$categoryName[] = $category->categoryname;
+		}
+		return implode(',',$categoryName);
+	}
+	
+	
 }
