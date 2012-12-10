@@ -5,6 +5,7 @@
  */
 class VoteMetadata extends CARMDC
 {
+	
 	/**
 	 * @return string the associated database table name
 	 */
@@ -21,14 +22,18 @@ class VoteMetadata extends CARMDC
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('vote_type, counts, createrid, creatername, audittype, auditstate', 'numerical', 'integerOnly'=>true),
-			array('title, picpath, createremail, md5', 'length', 'max'=>125),
+			array('title,createremail,voteendtime', 'required'),
+			array('votetype, counts, createrid, audittype, auditstate', 'numerical', 'integerOnly'=>true),
+			array('title', 'length', 'max'=>14),
+			array('createremail', 'length', 'max'=>100),
+// 			array('createremail','email','message'=>'邮箱输入有误.'),
+			array('md5', 'length', 'max'=>125),
 			array('keyword', 'length', 'max'=>64),
 			array('auditname', 'length', 'max'=>255),
-			array('createtime, voteendtime, auditdate', 'safe'),
+			array('createtime, creatername, voteendtime, auditdate', 'safe'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('id, title, picpath, vote_type, counts, createrid, creatername, createremail, keyword, createtime, voteendtime, audittype, auditname, auditdate, auditstate, md5', 'safe', 'on'=>'search'),
+			array('id, title, picpath, votetype, counts, createrid, creatername, createremail, keyword, createtime, voteendtime, audittype, auditname, auditdate, auditstate, md5', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -52,7 +57,7 @@ class VoteMetadata extends CARMDC
 			'id' => '主键',
 			'title' => '调查标题',
 			'picpath' => '调查的图标地址',
-			'vote_type' => '投票类型. 0, 单选. 1, 多选',
+			'votetype' => '投票类型. 0, 单选. 1, 多选',
 			'counts' => 'Counts',
 			'createrid' => '发起人id',
 			'creatername' => '发起人的妮称',
@@ -67,4 +72,5 @@ class VoteMetadata extends CARMDC
 			'md5' => '中搜微件hems系统中的关系id, 唯一值',
 		);
 	}
+	
 }

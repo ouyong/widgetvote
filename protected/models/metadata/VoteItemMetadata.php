@@ -21,9 +21,10 @@ class VoteItemMetadata extends CARMDC
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('vote_id', 'required'),
+// 			array('vote_id', 'required'),
+			array('itemtitle', 'required'),
+			array('itemtitle', 'length', 'max'=>25),
 			array('itemvotecount, displayorder, vote_id', 'numerical', 'integerOnly'=>true),
-			array('itemtitle', 'length', 'max'=>125),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
 			array('id, itemtitle, itemvotecount, displayorder, vote_id', 'safe', 'on'=>'search'),

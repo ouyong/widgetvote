@@ -1,0 +1,271 @@
+
+html, body {
+    font-size: 12px;
+    margin: 0 auto;
+    text-align: center;
+}
+.box {
+    height: auto;
+    margin: 0 auto;
+    width: 1000px;
+}
+.index_head {
+    height: 20px;
+    margin-bottom: 20px;
+    width: 1000px;
+}
+.index_head_1 {
+    background: url("../images/ico.png") no-repeat scroll 0 0 transparent;
+    color: #C12A2F;
+    float: left;
+    font-size: 14px;
+    font-weight: bold;
+    height: 20px;
+    line-height: 20px;
+    padding-left: 30px;
+    text-align: left;
+    width: 200px;
+}
+.index_head_2 {
+    color: #C12A2F;
+    float: right;
+    font-size: 14px;
+    height: 20px;
+    text-align: right;
+    width: 200px;
+}
+.index {
+    height: auto;
+    margin: 0 auto;
+    width: 960px;
+}
+.index_center1 {
+    color: #333333;
+    float: left;
+    height: 20px;
+    line-height: 20px;
+    margin-left: 20px;
+    text-align: left;
+    width: 800px;
+}
+.index_center2 {
+    color: #333333;
+    float: left;
+    line-height: 20px;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    margin-top: 5px;
+    text-align: left;
+    width: 800px;
+}
+.index_center3 {
+    background: none repeat scroll 0 0 #F4F9FF;
+    height: 130px;
+    margin: 0 auto;
+    width: 915px;
+}
+.index_center3_1 {
+    background: url("../images/ico1.png") no-repeat scroll 0 0 transparent;
+    color: #666666;
+    float: left;
+    line-height: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+    padding-left: 30px;
+    text-align: left;
+    width: 800px;
+}
+.index_center3_2 {
+    color: #333333;
+    float: left;
+    height: 20px;
+    line-height: 20px;
+    margin-left: 50px;
+    margin-top: 10px;
+    text-align: left;
+    width: 800px;
+}
+hr {
+    margin: 20px auto;
+}
+.page {
+    float: right;
+    margin-right: 150px;
+    margin-top: 20px;
+    width: 100%;
+}
+.page_1 {
+    background: none repeat scroll 0 0 #F0F0F0;
+    border: 1px solid #999999;
+    color: #999999;
+    float: right;
+    height: 20px;
+    line-height: 20px;
+    margin-left: 20px;
+    width: 60px;
+}
+.yijian {
+    border: 1px solid #CCCCCC;
+    float: left;
+    margin-top: 30px;
+    width: 100%;
+}
+.fuxuankuang {
+    display: inline;
+    float: left;
+    height: auto;
+    margin-left: 20px;
+    margin-top: 10px;
+    text-align: left;
+    width: 870px;
+}
+.fuxuankuang_zi {
+    color: #999999;
+    display: inline;
+    float: left;
+    height: 20px;
+    line-height: 20px;
+    margin-left: 20px;
+    margin-top: 5px;
+    text-align: right;
+    width: 850px;
+}
+.nicheng {
+    color: #333333;
+    float: left;
+    height: 30px;
+    margin-left: 30px;
+    margin-top: 20px;
+    text-align: left;
+    width: 800px;
+}
+.yanzhengma {
+    color: #999999;
+    float: left;
+    height: 30px;
+    margin-left: 12px;
+    text-align: left;
+    width: 800px;
+}
+.button {
+    display: inline;
+    float: left;
+    height: 30px;
+    margin-left: 70px;
+    margin-top: 10px;
+    text-align: left;
+    width: 700px;
+}
+.houtai_box {
+    color: #333333;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+}
+.houtai_left {
+    color: #333333;
+    display: inline;
+    float: left;
+    height: 20px;
+    margin-left: 20px;
+    text-align: right;
+    width: 70px;
+}
+.houtai_right {
+    color: #333333;
+    float: left;
+    text-align: left;
+}
+.houtai_zong {
+    background: url("../images/houtai_zong.png") no-repeat scroll 0 0 transparent;
+    float: left;
+    height: 54px;
+    margin-bottom: 10px;
+    position: relative;
+    width: 100%;
+}
+.houtai_zong1 {
+    color: #0000FF;
+    display: inline;
+    float: left;
+    font-weight: bold;
+    height: 20px;
+    line-height: 20px;
+    margin-left: 20px;
+    margin-top: 4px;
+    text-align: left;
+    width: 60px;
+}
+.houtai_zong2 {
+    float: right;
+    height: 14px;
+    left: 930px;
+    margin-right: 10px;
+    margin-top: 7px;
+    position: absolute;
+    width: 15px;
+}
+.yijian_box {
+}
+.yijian_1 {
+    clear: both;
+    color: #D2D2D2;
+    float: left;
+    margin-bottom: 20px;
+    text-align: left;
+    width: 100%;
+}
+.yijian_1_1 {
+    clear: both;
+    color: #333333;
+    float: left;
+    font-size: 14px;
+    height: 20px;
+    text-align: right;
+    width: 80px;
+}
+.yijian_1_2 {
+    float: left;
+    height: auto;
+    width: 320px;
+}
+.header_p_hs {
+    float: left;
+}
+.yijian h3 {
+    background: url("../images/yijian_03.gif") repeat scroll 0 0 transparent;
+    border-bottom: 1px solid #CCCCCC;
+    float: left;
+    height: 33px;
+    line-height: 33px;
+    margin-bottom: 0;
+    margin-right: 0;
+    margin-top: 0;
+    padding: 0;
+    text-align: left;
+    text-indent: 10px;
+    width: 100%;
+}
+.bqdivmain {
+    padding-bottom: 30px;
+}
+.fenye {
+    float: right;
+    margin-top: 5px;
+    width: 100%;
+}
+.fenye1 {
+    background: none repeat scroll 0 0 #F0F0F0;
+    border: 1px solid #999999;
+    color: #999999;
+    float: right;
+    height: 20px;
+    line-height: 20px;
+    margin-left: 20px;
+    text-align: center;
+    width: 60px;
+}
+.fuxuankuang_zi em {
+    font-family: Georgia,Tahoma,Arial;
+    font-size: 14px;
+}

@@ -45,8 +45,14 @@ class VoteOperateLog extends ActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array_merge(parent::relations(), array(
-				'vote' => array(ActiveRecord::BELONGS_TO, 'TblVote', 'vote_id'),
+				'vote' => array(ActiveRecord::BELONGS_TO, 'Vote', 'vote_id'),
 		));
+	}
+	
+	public function cascade() {
+		return array(
+				'vote'
+		);
 	}
 	
 	/**

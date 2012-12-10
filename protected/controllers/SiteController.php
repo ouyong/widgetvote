@@ -2,25 +2,31 @@
 
 class SiteController extends Controller
 {
-	/**
-	 * Declares class-based actions.
-	 */
+	
 	public function actions()
 	{
 		return array(
-			// captcha action renders the CAPTCHA image displayed on the contact page
-			'captcha'=>array(
-				'class'=>'CCaptchaAction',
-				'backColor'=>0xFFFFFF,
-			),
-			// page action renders "static" pages stored under 'protected/views/site/pages'
-			// They can be accessed via: index.php?r=site/page&view=FileName
-			'page'=>array(
-				'class'=>'CViewAction',
-			),
+				// captcha action renders the CAPTCHA image displayed on the contact page
+				'captcha'=>array(
+						'class'=>'CCaptchaAction',
+						'backColor'=>0xFFFFFF,
+						'foreColor'=>0x2040A0,  //字体颜色
+						'offset'=>2,            //字符间偏移量
+						'padding'=>2,         //文本周围的间距. 默认是 2
+						'height'=>28,         //验证码图片的高度. 默认是 50
+						'width'=>85,          //验证码图片宽度. 默认是 120
+						'minLength'=>4,     //设置最短为4位
+						'maxLength'=>4,       //设置最长为4位,生成的code在4直接rand了
+				),
+				// page action renders "static" pages stored under 'protectediews/site/pages'
+				// They can be accessed via: index.php?r=site/page&view=FileName
+				'page'=>array(
+						'class'=>'CViewAction',
+				),
 		);
 	}
-
+	
+	
 	/**
 	 * This is the default 'index' action that is invoked
 	 * when an action is not explicitly requested by users.
@@ -36,57 +42,69 @@ class SiteController extends Controller
 	 * 前台发起一个投票
 	 */
 	public function actionAdd() {
+		
 		if(isset($_POST['Vote'])) {
 			$vote = new Vote();
 			$vote->setAttributes($_POST['Vote']);
-			$vote->save();
-			echo 'success';
+			$result =$vote->save();
+			if($result) {
+				echo 'success';
+			} else {
+				echo '发布失败';
+			}
+			
 		} else {
 			$vote = new Vote();
+			$voteCategory = new VoteCategory();
+			$voteCategorys = $voteCategory->findAll();
 			$this->render('add',array(
-					'model' => $vote
+					'model' => $vote,
+					'datas' =>$voteCategorys
 					));
 		}
 	}
-		
+	
 	/**
 	 * 查看前四个投票（按最新，最热）
 	 */
 	public function actionView() {
 		
-		$page = $_GET['page'];
-		//最热
-		if($page == 'hot') {
-			$vote = new Vote();
-			$votes = $vote->findAll();
-		//最新
-		} else if($page == 'new') {
-			$vote = new Vote();
-			$votes = $vote->findAll();
-		//所有
-		} else {
-			$vote = new Vote();
-			$votes = $vote->findAll();
-		} 
-		$this->render('view', array(
-				'models' => $votes
-				));
+		$page = 'hot';
 		
-	}
-	
-	/**
-	 * 用户投票
-	 */
-	public function actionVote() {
-		if(isset($_POST['Vote'])) {
-			$vote = new Vote();
-			$vote->setAttributes($_POST['Vote']);
-			$vote->save();
-			echo 'success';
+		/**
+		 * 用户投票
+		 */
+		if(isset($_POST['VoteItem']['id'])) {
+			$voteItem = new VoteItem();
+			$voteItem = $voteItem->findByPk($_POST['VoteItem']['id']);
+			$result = $voteItem->save();
+		}
+		if(isset($_GET['page'])) {
+			$page = $_GET['page'];
+			//最热
+			if($page == 'hot') {
+				$vote = new Vote();
+				$votes = $vote->hot()->findAll();
+				$this->render('view', array(
+						'models' => $votes,
+						'page' => $page
+						));
+			//最新
+			} else if($page == 'new') {
+				$vote = new Vote();
+				$votes = $vote->new()->findAll();
+				$this->render('view', array(
+						'models' => $votes,
+						'page' => $page
+				));
+			}
+		//默认显示最热
 		} else {
 			$vote = new Vote();
-			$this->render('vote',array(
-					'model' => $vote
+			$votes = $vote->hot()->findAll();
+			$this->render('view', array(
+					'models' => $votes,
+					'page' => $page
 			));
 		}
 	}
@@ -95,25 +113,92 @@ class SiteController extends Controller
 	 * 查询所有投票（最新，最热，投票分类查询）
 	 */
 	public function actionLists() {
-		$page = $_GET['page'];
-		//最新
-		if($page == 'hot') {
+		
+		$page = 'hot';
+		
+		/**
+		 * 用户投票
+		 */
+		if(isset($_POST['VoteItem']['id'])) {
+			$voteItem = new VoteItem();
+			$voteItem = $voteItem->findByPk($_POST['VoteItem']['id']);
+			$result = $voteItem->save();
+		}
+		/**
+		 * 搜索
+		 */
+		if(isset($_GET['keyword'])) {
+			$keyword = $_GET['keyword'];
+				
 			$vote = new Vote();
-			$votes = $vote->findAll();
-		//最热	
-		} else if($page == 'new') {
+			$dataProvider = new CActiveDataProvider($vote,
+					array('criteria' => array(
+							'select'    => "*",
+							'order' => "createtime DESC",
+							'condition' => "title LIKE :keyword",
+							'params' => array(':keyword' =>"%".$keyword."%"),
+								
+					),
+							'pagination' => array(
+									'pageSize' => 4,
+							),
+					));
+			$this->render('lists', array(
+					'page' => $page,
+					'models' => $dataProvider
+			));
+			
+		} else if(isset($_GET['page'])) {
+			$page = $_GET['page'];
+			//最热
+			if($page == 'hot') {
+				$vote = new Vote();
+				$votes = $vote->listhot()->search();
+				$this->render('lists', array(
+						'page' => $page,
+						'models' => $votes
+				));
+			//最新
+			} else if($page == 'new') {
+				$vote = new Vote();
+				$votes = $vote->listnew()->search();
+				$this->render('lists', array(
+						'page' => $page,
+						'models' => $votes
+				));
+			}
+			
+		//默认显示最热
+		} else {
 			$vote = new Vote();
-			$votes = $vote->findAll();
-		//按分类显示
-		} else if($page == 'all') {
-			$vote = new Vote();
-			$votes = $vote->findAll();
-		} 
-		$this->render('view', array(
-				'models' => $votes
+			$votes = $vote->listhot()->search();
+			$this->render('lists', array(
+					'page' => $page,
+					'models' => $votes
+			));
+		}
+	}
+	
+	public function actionSearch() {
+		$keyword = $_POST['keyword'];
+	
+		$vote = new Vote();
+		$dataProvider = new CActiveDataProvider($vote,
+				array('criteria' => array(
+						'select'    => "*",
+						'order' => "createtime DESC",
+						'condition' => "title LIKE :keyword",
+						'params' => array(':keyword' =>"%".$keyword."%"),
+	
+				),
+						'pagination' => array(
+								'pageSize' => 4,
+						),
+				));
+		$this->redirect('lists', array(
+// 				'page' => $page,
+				'models' => $dataProvider
 		));
 	}
-
-
 	
 }

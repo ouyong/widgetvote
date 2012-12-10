@@ -21,7 +21,7 @@ class VoteCateRelatedMetadata extends CARMDC
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('vote_id, category_id', 'required'),
+// 			array('vote_id, category_id', 'required'),
 			array('vote_id, category_id', 'numerical', 'integerOnly'=>true),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.

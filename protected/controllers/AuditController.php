@@ -9,7 +9,7 @@ class AuditController extends Controller {
 	public function actionVlists() {
 		
 		$vote = new Vote();
-		$votes = $vote->findAll();
+		$votes = $vote->listbyid()->search();
 		$this->render('vlists', array(
 				'model' => $votes
 				));

@@ -34,6 +34,9 @@ class VoteItem extends ActiveRecord
 	 */
 	public function behaviors() {
 		return array_merge(parent::behaviors(), array(
+				'voteItem' => array(
+						'class' => 'application.components.behaviors.VoteItemBehavior'
+				),
 		));
 	}
 	
@@ -44,8 +47,14 @@ class VoteItem extends ActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array_merge(parent::relations(), array(
-				'vote' => array(CActiveRecord::BELONGS_TO, 'TblVote', 'vote_id'),
+				'vote' => array(CActiveRecord::BELONGS_TO, 'Vote', 'vote_id'),
 		));
+	}
+	
+	public function cascade() {
+		return array(
+				'vote'
+		);
 	}
 	
 	/**

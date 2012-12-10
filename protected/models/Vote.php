@@ -7,7 +7,7 @@
  * @property integer $id 主键
  * @property string $title 调查标题
  * @property string $picpath 调查的图标地址
- * @property integer $vote_type 投票类型. 0, 单选. 1, 多选
+ * @property integer $votetype 投票类型. 0, 单选. 1, 多选
  * @property integer $counts Counts
  * @property integer $createrid 发起人id
  * @property integer $creatername 发起人的妮称
@@ -20,6 +20,7 @@
  * @property string $auditdate 审核时间
  * @property integer $auditstate 审批状态. -1，不通过； 0，待审核； 1，通过；
  * @property string $md5 中搜微件hems系统中的关系id, 唯一值
+ * @property string $verifyCode 验证码
  *
  * The followings are the available model relations:
  * @property TblVoteCateRelated[] $tblVoteCateRelateds
@@ -28,6 +29,7 @@
  */
 class Vote extends ActiveRecord
 {
+	public $verifyCode;
 	/**
 	 * Returns the static model of the specified AR class.
 	 * @return Vote the static model class
@@ -47,6 +49,9 @@ class Vote extends ActiveRecord
 	 */
 	public function behaviors() {
 		return array_merge(parent::behaviors(), array(
+				'vote' => array(
+						'class' => 'application.components.behaviors.VoteBehavior'
+				),
 		));
 	}
 	
@@ -57,10 +62,16 @@ class Vote extends ActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array_merge(parent::relations(), array(
-			'voteCateRelateds' => array(CActiveRecord::HAS_MANY, 'TblVoteCateRelated', 'vote_id'),
-			'voteItems' => array(CActiveRecord::HAS_MANY, 'TblVoteItem', 'vote_id'),
-			'voteOperateLogs' => array(CActiveRecord::HAS_MANY, 'TblVoteOperateLog', 'vote_id'),
+			'voteCateRelateds' => array(CActiveRecord::HAS_MANY, 'VoteCateRelated', 'vote_id'),
+			'voteItems' => array(CActiveRecord::HAS_MANY, 'VoteItem', 'vote_id'),
+			'voteOperateLogs' => array(CActiveRecord::HAS_MANY, 'VoteOperateLog', 'vote_id'),
 		));
+	}
+	
+	public function cascade() {
+		return array(
+				'voteCateRelateds', 'voteItems', 'voteOperateLogs'
+		);
 	}
 	
 	/**
@@ -70,6 +81,7 @@ class Vote extends ActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array_merge(parent::rules(), array(
+				array('verifyCode','captcha','on'=>'insert', 'allowEmpty'=>!CCaptcha::checkRequirements()),
 		));
 	}
 	
@@ -79,6 +91,29 @@ class Vote extends ActiveRecord
 	public function attributeLabels() {
 		return array_merge(parent::attributeLabels(), array(
 		));
+	}
+	
+	public function scopes() {
+		return array(
+				'hot' => array(
+						'order' => 'counts DESC',
+						'limit' => '4'
+						),
+				'new' => array(
+						'order' => 'createtime DESC',
+						'limit' => '4'
+						),
+				'listhot' => array(
+						'order' => 'counts DESC',
+						),
+				'listnew' => array(
+						'order' => 'createtime DESC',
+						),
+				'listbyid' => array(
+						'order' => 'id DESC',
+						),
+				
+		);
 	}
 	
 	/**
@@ -95,7 +130,7 @@ class Vote extends ActiveRecord
 		$criteria->compare('id',$this->id);
 		$criteria->compare('title',$this->title,true);
 		$criteria->compare('picpath',$this->picpath,true);
-		$criteria->compare('vote_type',$this->vote_type);
+		$criteria->compare('votetype',$this->votetype);
 		$criteria->compare('counts',$this->counts);
 		$criteria->compare('createrid',$this->createrid);
 		$criteria->compare('creatername',$this->creatername);
@@ -111,6 +146,10 @@ class Vote extends ActiveRecord
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
+			'pagination'=>array(
+					'pageSize'=>4,
+			),
 		));
 	}
+	
 }

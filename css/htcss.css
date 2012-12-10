@@ -1,0 +1,843 @@
+
+@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+ul, li {
+    list-style: none outside none;
+}
+.clear {
+    clear: both;
+}
+body {
+    color: #000000;
+    font-family: "宋体",Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    text-align: center;
+}
+.htcontainer {
+    margin: 0 auto;
+    text-align: left;
+    width: 1000px;
+}
+.fl {
+    display: inline;
+    float: left;
+}
+.fr {
+    display: inline;
+    float: right;
+}
+.blue03c {
+    color: #0033CC;
+}
+.red {
+    color: red;
+}
+.head {
+    width: 100%;
+}
+.toptitle {
+    background: url("../images/top01.jpg") repeat-x scroll 0 0 transparent;
+    height: 26px;
+    width: 100%;
+}
+.toptitle h3 {
+    color: #0000CB;
+    float: left;
+    font-size: 14px;
+    height: 26px;
+    line-height: 26px;
+    padding-left: 10px;
+    width: 300px;
+}
+.topmenu {
+    background: url("../images/top03.jpg") repeat-x scroll 0 0 transparent;
+    height: 28px;
+    line-height: 28px;
+    padding-left: 10px;
+}
+.topmenu .list {
+    display: inline;
+    float: left;
+    height: 23px;
+    line-height: 23px;
+    margin-right: 5px;
+    text-align: center;
+    width: 61px;
+}
+.topmenu .list div span {
+    background: url("../images/sj.gif") no-repeat scroll 50px center transparent;
+    display: block;
+    height: 23px;
+    line-height: 23px;
+    width: 61px;
+}
+.topmenu a.first {
+    color: #000000;
+    display: block;
+    height: 23px;
+    line-height: 23px;
+    width: 61px;
+}
+.ck {
+    background: url("../images/ciku.jpg") no-repeat scroll 2px center transparent;
+}
+.yh {
+    background: url("../images/yonghu.jpg") no-repeat scroll 2px center transparent;
+}
+.mb {
+    background: url("../images/muban.jpg") no-repeat scroll 2px center transparent;
+}
+.hz {
+    background: url("../images/hezuo.jpg") no-repeat scroll 2px center transparent;
+}
+.ggao {
+    background: url("../images/guanggao.jpg") no-repeat scroll 2px center transparent;
+}
+.gongju {
+    background: url("../images/gongju.jpg") no-repeat scroll 2px center transparent;
+}
+.help {
+    background: url("../images/help.jpg") no-repeat scroll 2px center transparent;
+}
+#nav {
+    padding-top: 2px;
+}
+#nav li ul {
+    background: url("../images/menu02bg.gif") repeat-y scroll 0 0 transparent;
+    border: 1px solid #6681B0;
+    display: none;
+    list-style-type: none;
+    position: absolute;
+    text-align: center;
+    width: 139px;
+    z-index: 300;
+}
+#nav .list ul li {
+    margin: 5px 0;
+}
+#nav .list ul li a {
+    color: #3F3F3F;
+    display: block;
+    height: 26px;
+    line-height: 26px;
+    margin-left: 4px;
+    width: 131px;
+}
+#nav .list ul li a:hover {
+    background: url("../images/menu02libg.gif") no-repeat scroll 0 0 transparent;
+}
+#nav li:hover ul {
+    display: block;
+}
+#nav li.sfhover ul {
+    display: block;
+}
+.daohang {
+    background: url("../images/top04.jpg") repeat-x scroll 0 0 transparent;
+    height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+}
+.dhl {
+    height: 30px;
+    line-height: 30px;
+    margin-left: 10px;
+}
+.blue {
+    color: #083360;
+}
+.dhl a:hover {
+    color: red;
+}
+.searchbox {
+    background: url("../images/top06.jpg") repeat-x scroll 0 -4px #CDDEEE;
+    position: relative;
+}
+.fmarg ul {
+}
+.fmarg li {
+    display: inline;
+    float: left;
+    line-height: 20px;
+    padding: 5px 5px 0 0;
+    position: relative;
+}
+.fmarg label {
+    margin-left: 10px;
+}
+.fmarg input {
+    vertical-align: middle;
+}
+.oneform select {
+    height: 20px;
+    vertical-align: middle;
+    width: 75px;
+}
+.oneform {
+    margin-bottom: 5px;
+    position: relative;
+}
+.textbox {
+    border-color: #696969 #E4E4E4 #E4E4E4 #696969;
+    border-style: solid;
+    border-width: 1px;
+    height: 18px;
+}
+.text85 {
+    width: 85px;
+}
+.text60 {
+    width: 60px;
+}
+.text50 {
+    width: 50px;
+}
+.text125 {
+    width: 80px;
+}
+.twoform select {
+    height: 20px;
+    vertical-align: middle;
+    width: 120px;
+}
+.but {
+    cursor: pointer;
+    height: 1.8em;
+    margin-left: 10px;
+    width: 4em;
+}
+.wjj {
+    background: url("../images/wjj.gif") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 12px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 16px;
+}
+.change {
+    background: url("../images/top07.gif") repeat-x scroll 0 0 transparent;
+    height: 28px;
+    overflow: hidden;
+}
+.cfl {
+    display: inline;
+    float: left;
+}
+.cfl ul {
+    margin-left: 10px;
+    overflow: hidden;
+}
+.cfl li {
+    display: inline;
+    float: left;
+    height: 28px;
+    line-height: 28px;
+    margin: 0 5px;
+}
+.cfl li select {
+    height: 18px;
+    vertical-align: middle;
+}
+.mte6 {
+}
+.jgbg {
+    background: url("../images/jg.gif") no-repeat scroll left center transparent;
+    height: 28px;
+    width: 2px;
+}
+.nofront {
+    background: url("../images/nofirstbg.gif") no-repeat scroll left center transparent;
+    height: 28px;
+    width: 10px;
+}
+.nofront02 {
+    background: url("../images/nofrontbg.gif") no-repeat scroll left center transparent;
+    height: 28px;
+    width: 10px;
+}
+.front11 {
+    background: url("../images/firstbg.gif") no-repeat scroll left center transparent;
+    height: 28px;
+    width: 10px;
+}
+.front22 {
+    background: url("../images/frontbg.gif") no-repeat scroll left center transparent;
+    height: 28px;
+    width: 10px;
+}
+.front33 {
+    background: url("../images/nonextbg.gif") no-repeat scroll left center transparent;
+}
+.front44 {
+    background: url("../images/nolastbg.gif") no-repeat scroll left center transparent;
+}
+a.front03 {
+    background: url("../images/firstbg.gif") no-repeat scroll left center transparent;
+    display: block;
+    height: 28px;
+    outline: medium none;
+    width: 10px;
+}
+a.front04 {
+    background: url("../images/frontbg.gif") no-repeat scroll left center transparent;
+    display: block;
+    height: 28px;
+    outline: medium none;
+    width: 10px;
+}
+.nonext {
+    background: url("../images/nonextbg.gif") no-repeat scroll left center transparent;
+    height: 28px;
+    width: 10px;
+}
+.nonext02 {
+    background: url("../images/nolastbg.gif") no-repeat scroll left center transparent;
+    height: 28px;
+    width: 10px;
+}
+a.next03 {
+    background: url("../images/nextbg.gif") no-repeat scroll left center transparent;
+    display: block;
+    height: 28px;
+    outline: medium none;
+    width: 10px;
+}
+a.next04 {
+    background: url("../images/lastbg.gif") no-repeat scroll left center transparent;
+    display: block;
+    height: 28px;
+    outline: medium none;
+    width: 10px;
+}
+a.tj {
+    background: url("../images/tianjia.gif") no-repeat scroll left center transparent;
+    display: block;
+    padding-left: 18px;
+}
+a.chak {
+    background: url("../images/chakan.gif") no-repeat scroll left center transparent;
+    display: block;
+    padding-left: 18px;
+}
+a.xg {
+    background: url("../images/xiugai.gif") no-repeat scroll left center transparent;
+    display: block;
+    padding-left: 18px;
+}
+a.sc {
+    background: url("../images/shanchu.gif") no-repeat scroll left center transparent;
+    display: block;
+    padding-left: 18px;
+}
+a.dj {
+    background: url("../images/dongjie.gif") no-repeat scroll left center transparent;
+    display: block;
+    padding-left: 18px;
+}
+a.ss {
+    background: url("../images/sousuo.gif") no-repeat scroll left center transparent;
+    display: block;
+    padding-left: 18px;
+}
+a.pingj {
+    background: url("../images/pingji.gif") no-repeat scroll left center transparent;
+    display: block;
+    padding-left: 18px;
+}
+a.up {
+    background: url("../images/upline.gif") no-repeat scroll left center transparent;
+    display: block;
+    padding-left: 18px;
+}
+a.down {
+    background: url("../images/downline.gif") no-repeat scroll left center transparent;
+    display: block;
+    padding-left: 18px;
+}
+a.add {
+    background: url("../images/add.gif") no-repeat scroll left center transparent;
+    display: block;
+    padding-left: 18px;
+}
+a.pz {
+    background: url("../images/pizhun.gif") no-repeat scroll left center transparent;
+    display: block;
+    padding-left: 18px;
+}
+a.jj {
+    background: url("../images/jujue.gif") no-repeat scroll left center transparent;
+    display: block;
+    padding-left: 18px;
+}
+div .divadd {
+    display: block;
+    overflow-y: auto;
+}
+div .divhide {
+    display: none;
+    overflow-y: auto;
+}
+a.shangyici {
+    background: url("../images/syc.gif") no-repeat scroll left center transparent;
+    display: block;
+    padding-left: 18px;
+}
+a.xiayici {
+    background: url("../images/nextc.gif") no-repeat scroll right center transparent;
+    display: block;
+    padding-right: 18px;
+}
+a.tijiao {
+    background: url("../images/tjbg.gif") no-repeat scroll left center transparent;
+    display: block;
+    padding-left: 18px;
+}
+a.canshu {
+    background: url("../images/csms.gif") no-repeat scroll left center transparent;
+    display: block;
+    padding-left: 18px;
+}
+a.shenpi {
+    background: url("../images/spms.gif") no-repeat scroll left center transparent;
+    display: block;
+    padding-left: 18px;
+}
+a.bqsz {
+    background: url("../images/shezhi.gif") no-repeat scroll left center transparent;
+    display: block;
+    padding-left: 18px;
+}
+a.bqtj {
+    background: url("../images/tianjia.gif") no-repeat scroll left center transparent;
+    display: block;
+    padding-left: 18px;
+}
+a.bqyl {
+    background: url("../images/bqyl.gif") no-repeat scroll left center transparent;
+    display: block;
+    padding-left: 18px;
+}
+a.bqsp {
+    background: url("../images/shenpi.gif") no-repeat scroll left center transparent;
+    display: block;
+    padding-left: 18px;
+}
+a.bqpt {
+    background: url("../images/peitu.jpg") no-repeat scroll left center transparent;
+    display: block;
+    padding-left: 18px;
+}
+a.bqck {
+    background: url("../images/cankao.jpg") no-repeat scroll left center transparent;
+    display: block;
+    padding-left: 18px;
+}
+a.bqbc {
+    background: url("../images/baocun.jpg") no-repeat scroll left center transparent;
+    display: block;
+    padding-left: 18px;
+}
+a.handnew {
+    background: url("../images/sdgx.gif") no-repeat scroll left center transparent;
+    display: block;
+    padding-left: 18px;
+}
+a.bqwjms {
+    background: url("../images/weijianms.gif") no-repeat scroll left center transparent;
+    display: block;
+    padding-left: 18px;
+}
+a.bqjj {
+    background: url("../images/u720_original.GIF") no-repeat scroll left center transparent;
+    display: block;
+    padding-left: 18px;
+}
+a.bqzd {
+    background: url("../images/u733_original.gif") no-repeat scroll left center transparent;
+    display: block;
+    padding-left: 18px;
+}
+a.znxcj, a.znxck, a.znxhf, a.znxyd, a.znxsc {
+    background: none repeat scroll 0 0 #DEE8F4;
+    border: 1px solid #E2EBF5;
+    display: block;
+    padding: 0 5px;
+}
+.cfl li a {
+    color: #000000;
+}
+.cfl li select {
+    height: 20px;
+    vertical-align: middle;
+}
+.linecf {
+    height: 28px;
+    line-height: 28px;
+    margin-left: 10px;
+}
+.cfr {
+    display: inline;
+    float: right;
+    height: 28px;
+    line-height: 28px;
+    margin-right: 10px;
+    position: relative;
+}
+.cfr li {
+    display: inline;
+    float: left;
+    margin: 0 5px;
+}
+.bqfr li a {
+    color: #000000;
+}
+.bqfr {
+}
+.bqfr li a:hover {
+    color: red;
+}
+.bqdivmain {
+    background: none repeat scroll 0 0 #FFFFFF;
+    margin: 10px;
+    padding: 10px;
+    width: 96%;
+}
+.bqborder {
+    border: 1px solid #90B4E5;
+}
+.bqtabletop {
+    background: url("../images/bqtopbg.gif") repeat-x scroll 0 0 transparent;
+    height: 26px;
+    line-height: 26px;
+}
+.bqtabletop h3 {
+    color: #0000CC;
+    display: inline;
+    float: left;
+    font-size: 14px;
+    margin-left: 10px;
+}
+.bqtabletop img {
+    display: inline;
+    float: right;
+    margin-right: 10px;
+    padding-top: 5px;
+    vertical-align: middle;
+}
+.bqtableline {
+    background: url("../images/bqlinebg.gif") repeat-x scroll 0 0 transparent;
+    height: 27px;
+    line-height: 27px;
+    overflow: hidden;
+}
+.main {
+    background: none repeat scroll 0 0 #CDDEEE;
+    overflow: hidden;
+}
+.divmain {
+    background: none repeat scroll 0 0 #FFFFFF;
+    margin: 10px;
+    width: 98%;
+}
+.tableliebiao {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-left: 1px solid #C2C2C4;
+    width: 100%;
+}
+.tableliebiao thead {
+    background: none repeat scroll 0 0 #ECECEC;
+}
+.tableliebiao th, .tableliebiao td {
+    border-right: 1px solid #C2C2C4;
+    border-top: 1px solid #C2C2C4;
+    padding: 7px 2px;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+.tableliebiao td a, .tableshuru td a {
+    color: #0033CC;
+}
+.tableliebiao td a:hover, .tableshuru td a:hover {
+    color: red;
+}
+.tdcenter, .tableliebiao th {
+    text-align: center;
+}
+.bqline {
+    background: url("../images/bqbg.gif") repeat-x scroll 0 0 transparent;
+    height: 34px;
+    line-height: 34px;
+}
+.bqline ul {
+    overflow: hidden;
+    padding-top: 7px;
+}
+.bqline ul li {
+    background: url("../images/bqtopabg.gif") no-repeat scroll 0 0 transparent;
+    display: inline;
+    float: left;
+    height: 23px;
+    line-height: 23px;
+    margin-right: 3px;
+    text-align: center;
+    width: 51px;
+}
+.bqline ul li.bqahover {
+    background: url("../images/bqabg.gif") no-repeat scroll 0 0 transparent;
+}
+.bqline ul li a {
+    color: #000000;
+}
+.bqline ul li a:hover {
+    color: red;
+}
+.bztitle ul {
+    margin-left: 20%;
+    overflow: hidden;
+    padding-top: 10px;
+}
+.bztitle li {
+    display: inline;
+    float: left;
+    margin: 0 10px;
+    text-align: center;
+}
+.bztitle li h3 {
+    color: #3F3F3F;
+    font-size: 14px;
+}
+.bztitle li .hovernow {
+    color: #990000;
+}
+.bztitle li span {
+    font-size: 36px;
+}
+.maintable {
+    margin: 0 auto;
+    width: 80%;
+}
+.tableshuru {
+    margin: 20px 0;
+    width: 100%;
+}
+.tableshuru td {
+    padding: 7px 2px;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+.but02 {
+    cursor: pointer;
+    height: 1.8em;
+    margin: 0 10px;
+    vertical-align: middle;
+    width: 4em;
+}
+.gx {
+    color: #0033CC;
+    margin: 0 5px;
+}
+.gx:hover {
+    color: red;
+}
+.tableshuru input {
+    vertical-align: middle;
+}
+.inputtext001 {
+    border-color: #696969 #E4E4E4 #E4E4E4 #696969;
+    border-style: solid;
+    border-width: 1px;
+    height: 18px;
+    width: 165px;
+}
+.w265 {
+    width: 265px;
+}
+.w85 {
+    width: 85px;
+}
+.w125 {
+    width: 125px;
+}
+.index {
+    border-right: 1px dashed #CCCCCC;
+    height: 260px;
+    margin: 50px 0 50px 20px;
+    width: 45%;
+}
+.indexhy h3 {
+    font-size: 16px;
+    padding: 20px 0 0 30px;
+}
+.borderline {
+    border: 1px solid #B0C5E9;
+}
+.divmain h4 {
+    margin: 0 0 0 50px;
+    padding: 20px 0;
+}
+.bqsm {
+    font-size: 14px;
+    height: 24px;
+    line-height: 24px;
+    padding-left: 15px;
+}
+.znxtab td, .znxtab th {
+    border: medium none;
+    text-align: left;
+}
+.znxtab td p {
+    color: #666666;
+    line-height: 18px;
+    text-indent: 2em;
+}
+.znxtab td.linetd {
+    height: 2px;
+    padding: 0;
+}
+.btline {
+    border-bottom: 1px dashed #CCCCCC;
+    height: 2px;
+    margin: 0 10px;
+}
+.znxtab {
+    border: 1px solid #CCCCCC;
+}
+.boxchange {
+    width: 230px;
+}
+.midanniu {
+    margin-right: 10px;
+    margin-top: 90px;
+    width: 60px;
+}
+.name {
+    border: 1px solid #CCCCCC;
+    height: 150px;
+    overflow-y: auto;
+    width: 100%;
+}
+.name ul li {
+    line-height: 20px;
+    margin-left: 10px;
+}
+.cx {
+    height: 200px;
+    line-height: 24px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    width: 600px;
+}
+.mrlfpnext {
+    margin-left: 200px;
+}
+.login ul {
+    overflow: hidden;
+}
+.login form li {
+    float: left;
+    padding-bottom: 10px;
+    width: 100%;
+}
+.login form label {
+    display: inline;
+    float: left;
+    text-align: right;
+    width: 100px;
+}
+.login form input {
+    border-color: #696969 #E4E4E4 #E4E4E4 #696969;
+    border-style: solid;
+    border-width: 1px;
+    display: inline;
+    float: left;
+    height: 18px;
+    vertical-align: middle;
+}
+.loginanniu ul {
+    margin-left: 100px;
+}
+.loginanniu li {
+    display: inline;
+    float: left;
+    width: auto;
+}
+.loginanniu li input {
+    vertical-align: middle;
+}
+.divposition {
+    margin: 0 0 0 330px;
+    padding: 15px 0;
+}
+.ck_daoru {
+    width: 540px;
+}
+.selsect_daoru {
+    float: left;
+    height: 220px;
+    overflow: hidden;
+    padding: 0 10px 10px;
+    text-align: left;
+}
+.selsect_daoru .sname {
+    height: 20px;
+    width: 170px;
+}
+.selsect_daoru textarea {
+    font-size: 12px;
+    height: 188px;
+    margin-top: 5px;
+    padding: 5px;
+    resize: none;
+}
+.selsect_daoru .textarea1 {
+    height: 188px;
+    margin-top: 5px;
+    resize: none;
+    width: 214px;
+}
+.selsect_daoru .textarea2 {
+    height: 188px;
+    margin-top: 5px;
+    resize: none;
+    width: 264px;
+}
+.ck_daoru_tit {
+    height: 24px;
+    line-height: 24px;
+    margin: 0 10px;
+    text-align: left;
+    width: 500px;
+}
+.tipsbox {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: none repeat scroll 0 0 #009000;
+    border-bottom: 1px solid #000000;
+    border-image: none;
+    border-top: 1px solid #000000;
+    color: #FFFFFF;
+    line-height: 20px;
+    padding: 5px;
+}
+.tipsbox2 {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: none repeat scroll 0 0 #FFC600;
+    border-bottom: 1px solid #000000;
+    border-image: none;
+    border-top: 1px solid #000000;
+    color: #000000;
+    line-height: 20px;
+    padding: 5px;
+}
