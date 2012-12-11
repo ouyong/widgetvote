@@ -163,5 +163,18 @@ class Vote extends ActiveRecord
 		return implode(',',$categoryName);
 	}
 	
+	public function getAuditstate($auditstate) {
+		
+		if($auditstate == 0) {
+			$auditstate = '未审核';
+		} else if($auditstate == 1) {
+			$auditstate = '通过';
+		} else if($auditstate == 2) {
+			$auditstate = '不通过';
+		} 
+		return $auditstate;
+		
+	}
+	
 	
 }

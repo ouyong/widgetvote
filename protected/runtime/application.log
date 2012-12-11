@@ -3952,3 +3952,316 @@ REQUEST_URI=/widgetvote/index.php/audit/vlists
 in D:\warp\wamp\www\widgetvote\protected\views\audit\vlists.php (6)
 in D:\warp\wamp\www\widgetvote\protected\controllers\AuditController.php (15)
 in D:\warp\wamp\www\widgetvote\index.php (13)
+2012/12/10 14:36:27 [warning] [application] Failed to set unsafe attribute "picpath" of "Vote".
+in D:\warp\wamp\www\syslibold\models\ar\adv\CActiveRecordAdv.php (161)
+in D:\warp\wamp\www\widgetvote\protected\controllers\AdminController.php (35)
+in D:\warp\wamp\www\widgetvote\index.php (13)
+2012/12/10 15:35:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "deletes" 动作.' in D:\warp\wamp\www\framework\web\CController.php:477
+Stack trace:
+#0 D:\warp\wamp\www\framework\web\CController.php(262): CController->missingAction('deletes')
+#1 D:\warp\wamp\www\framework\web\CWebApplication.php(277): CController->run('deletes')
+#2 D:\warp\wamp\www\framework\web\CWebApplication.php(136): CWebApplication->runController('audit/deletes')
+#3 D:\warp\wamp\www\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\warp\wamp\www\widgetvote\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/widgetvote/index.php/audit/deletes
+2012/12/10 15:35:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "deletes" 动作.' in D:\warp\wamp\www\framework\web\CController.php:477
+Stack trace:
+#0 D:\warp\wamp\www\framework\web\CController.php(262): CController->missingAction('deletes')
+#1 D:\warp\wamp\www\framework\web\CWebApplication.php(277): CController->run('deletes')
+#2 D:\warp\wamp\www\framework\web\CWebApplication.php(136): CWebApplication->runController('audit/deletes')
+#3 D:\warp\wamp\www\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\warp\wamp\www\widgetvote\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/widgetvote/index.php/audit/deletes
+2012/12/10 15:35:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "deletes" 动作.' in D:\warp\wamp\www\framework\web\CController.php:477
+Stack trace:
+#0 D:\warp\wamp\www\framework\web\CController.php(262): CController->missingAction('deletes')
+#1 D:\warp\wamp\www\framework\web\CWebApplication.php(277): CController->run('deletes')
+#2 D:\warp\wamp\www\framework\web\CWebApplication.php(136): CWebApplication->runController('audit/deletes')
+#3 D:\warp\wamp\www\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\warp\wamp\www\widgetvote\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/widgetvote/index.php/audit/deletes
+2012/12/10 15:35:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "deletes" 动作.' in D:\warp\wamp\www\framework\web\CController.php:477
+Stack trace:
+#0 D:\warp\wamp\www\framework\web\CController.php(262): CController->missingAction('deletes')
+#1 D:\warp\wamp\www\framework\web\CWebApplication.php(277): CController->run('deletes')
+#2 D:\warp\wamp\www\framework\web\CWebApplication.php(136): CWebApplication->runController('audit/deletes')
+#3 D:\warp\wamp\www\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\warp\wamp\www\widgetvote\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/widgetvote/index.php/audit/deletes
+2012/12/10 15:35:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "deletes" 动作.' in D:\warp\wamp\www\framework\web\CController.php:477
+Stack trace:
+#0 D:\warp\wamp\www\framework\web\CController.php(262): CController->missingAction('deletes')
+#1 D:\warp\wamp\www\framework\web\CWebApplication.php(277): CController->run('deletes')
+#2 D:\warp\wamp\www\framework\web\CWebApplication.php(136): CWebApplication->runController('audit/deletes')
+#3 D:\warp\wamp\www\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\warp\wamp\www\widgetvote\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/widgetvote/index.php/audit/deletes
+2012/12/10 15:45:21 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`vote/tbl_vote_cate_related`, CONSTRAINT `FKtbl_vote_c243216` FOREIGN KEY (`vote_id`) REFERENCES `tbl_vote` (`id`)). The SQL statement executed was: DELETE FROM `tbl_vote` WHERE id=:ycp0.
+in D:\warp\wamp\www\widgetvote\protected\controllers\AuditController.php (107)
+in D:\warp\wamp\www\widgetvote\index.php (13)
+2012/12/10 15:45:21 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`vote/tbl_vote_cate_related`, CONSTRAINT `FKtbl_vote_c243216` FOREIGN KEY (`vote_id`) REFERENCES `tbl_vote` (`id`)). The SQL statement executed was: DELETE FROM `tbl_vote` WHERE id=:ycp0' in D:\warp\wamp\www\framework\db\CDbCommand.php:336
+Stack trace:
+#0 D:\warp\wamp\www\framework\db\ar\CActiveRecord.php(1759): CDbCommand->execute()
+#1 D:\warp\wamp\www\widgetvote\protected\controllers\AuditController.php(107): CActiveRecord->deleteAll(Object(CDbCriteria))
+#2 D:\warp\wamp\www\framework\web\actions\CInlineAction.php(50): AuditController->actionDeletes()
+#3 D:\warp\wamp\www\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#4 D:\warp\wamp\www\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#5 D:\warp\wamp\www\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\warp\wamp\www\framework\web\CWebApplication.php(277): CController->run('deletes')
+#7 D:\warp\wamp\www\framework\web\CWebApplication.php(136): CWebApplication->runController('audit/deletes')
+#8 D:\warp\wamp\www\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#9 D:\warp\wamp\www\widgetvote\index.php(13): CApplication->run()
+#10 {main} REQUEST_URI=/widgetvote/index.php/audit/deletes
+2012/12/10 15:46:16 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`vote/tbl_vote_cate_related`, CONSTRAINT `FKtbl_vote_c243216` FOREIGN KEY (`vote_id`) REFERENCES `tbl_vote` (`id`)). The SQL statement executed was: DELETE FROM `tbl_vote` WHERE id=:ycp0.
+in D:\warp\wamp\www\widgetvote\protected\controllers\AuditController.php (107)
+in D:\warp\wamp\www\widgetvote\index.php (13)
+2012/12/10 15:46:16 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`vote/tbl_vote_cate_related`, CONSTRAINT `FKtbl_vote_c243216` FOREIGN KEY (`vote_id`) REFERENCES `tbl_vote` (`id`)). The SQL statement executed was: DELETE FROM `tbl_vote` WHERE id=:ycp0' in D:\warp\wamp\www\framework\db\CDbCommand.php:336
+Stack trace:
+#0 D:\warp\wamp\www\framework\db\ar\CActiveRecord.php(1759): CDbCommand->execute()
+#1 D:\warp\wamp\www\widgetvote\protected\controllers\AuditController.php(107): CActiveRecord->deleteAll(Object(CDbCriteria))
+#2 D:\warp\wamp\www\framework\web\actions\CInlineAction.php(50): AuditController->actionDeletes()
+#3 D:\warp\wamp\www\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#4 D:\warp\wamp\www\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#5 D:\warp\wamp\www\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\warp\wamp\www\framework\web\CWebApplication.php(277): CController->run('deletes')
+#7 D:\warp\wamp\www\framework\web\CWebApplication.php(136): CWebApplication->runController('audit/deletes')
+#8 D:\warp\wamp\www\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#9 D:\warp\wamp\www\widgetvote\index.php(13): CApplication->run()
+#10 {main} REQUEST_URI=/widgetvote/index.php/audit/deletes
+2012/12/10 15:46:34 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`vote/tbl_vote_cate_related`, CONSTRAINT `FKtbl_vote_c243216` FOREIGN KEY (`vote_id`) REFERENCES `tbl_vote` (`id`)). The SQL statement executed was: DELETE FROM `tbl_vote` WHERE id=:ycp0.
+in D:\warp\wamp\www\widgetvote\protected\controllers\AuditController.php (107)
+in D:\warp\wamp\www\widgetvote\index.php (13)
+2012/12/10 15:46:34 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`vote/tbl_vote_cate_related`, CONSTRAINT `FKtbl_vote_c243216` FOREIGN KEY (`vote_id`) REFERENCES `tbl_vote` (`id`)). The SQL statement executed was: DELETE FROM `tbl_vote` WHERE id=:ycp0' in D:\warp\wamp\www\framework\db\CDbCommand.php:336
+Stack trace:
+#0 D:\warp\wamp\www\framework\db\ar\CActiveRecord.php(1759): CDbCommand->execute()
+#1 D:\warp\wamp\www\widgetvote\protected\controllers\AuditController.php(107): CActiveRecord->deleteAll(Object(CDbCriteria))
+#2 D:\warp\wamp\www\framework\web\actions\CInlineAction.php(50): AuditController->actionDeletes()
+#3 D:\warp\wamp\www\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#4 D:\warp\wamp\www\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#5 D:\warp\wamp\www\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\warp\wamp\www\framework\web\CWebApplication.php(277): CController->run('deletes')
+#7 D:\warp\wamp\www\framework\web\CWebApplication.php(136): CWebApplication->runController('audit/deletes')
+#8 D:\warp\wamp\www\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#9 D:\warp\wamp\www\widgetvote\index.php(13): CApplication->run()
+#10 {main} REQUEST_URI=/widgetvote/index.php/audit/deletes
+2012/12/10 15:48:08 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`vote/tbl_vote_cate_related`, CONSTRAINT `FKtbl_vote_c243216` FOREIGN KEY (`vote_id`) REFERENCES `tbl_vote` (`id`)). The SQL statement executed was: DELETE FROM `tbl_vote` WHERE id=:ycp0.
+in D:\warp\wamp\www\widgetvote\protected\controllers\AuditController.php (107)
+in D:\warp\wamp\www\widgetvote\index.php (13)
+2012/12/10 15:48:08 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`vote/tbl_vote_cate_related`, CONSTRAINT `FKtbl_vote_c243216` FOREIGN KEY (`vote_id`) REFERENCES `tbl_vote` (`id`)). The SQL statement executed was: DELETE FROM `tbl_vote` WHERE id=:ycp0' in D:\warp\wamp\www\framework\db\CDbCommand.php:336
+Stack trace:
+#0 D:\warp\wamp\www\framework\db\ar\CActiveRecord.php(1759): CDbCommand->execute()
+#1 D:\warp\wamp\www\widgetvote\protected\controllers\AuditController.php(107): CActiveRecord->deleteAll(Object(CDbCriteria))
+#2 D:\warp\wamp\www\framework\web\actions\CInlineAction.php(50): AuditController->actionDeletes()
+#3 D:\warp\wamp\www\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#4 D:\warp\wamp\www\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#5 D:\warp\wamp\www\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\warp\wamp\www\framework\web\CWebApplication.php(277): CController->run('deletes')
+#7 D:\warp\wamp\www\framework\web\CWebApplication.php(136): CWebApplication->runController('audit/deletes')
+#8 D:\warp\wamp\www\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#9 D:\warp\wamp\www\widgetvote\index.php(13): CApplication->run()
+#10 {main} REQUEST_URI=/widgetvote/index.php/audit/deletes
+2012/12/10 15:48:16 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`vote/tbl_vote_cate_related`, CONSTRAINT `FKtbl_vote_c243216` FOREIGN KEY (`vote_id`) REFERENCES `tbl_vote` (`id`)). The SQL statement executed was: DELETE FROM `tbl_vote` WHERE id=:ycp0.
+in D:\warp\wamp\www\widgetvote\protected\controllers\AuditController.php (107)
+in D:\warp\wamp\www\widgetvote\index.php (13)
+2012/12/10 15:48:16 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`vote/tbl_vote_cate_related`, CONSTRAINT `FKtbl_vote_c243216` FOREIGN KEY (`vote_id`) REFERENCES `tbl_vote` (`id`)). The SQL statement executed was: DELETE FROM `tbl_vote` WHERE id=:ycp0' in D:\warp\wamp\www\framework\db\CDbCommand.php:336
+Stack trace:
+#0 D:\warp\wamp\www\framework\db\ar\CActiveRecord.php(1759): CDbCommand->execute()
+#1 D:\warp\wamp\www\widgetvote\protected\controllers\AuditController.php(107): CActiveRecord->deleteAll(Object(CDbCriteria))
+#2 D:\warp\wamp\www\framework\web\actions\CInlineAction.php(50): AuditController->actionDeletes()
+#3 D:\warp\wamp\www\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#4 D:\warp\wamp\www\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#5 D:\warp\wamp\www\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\warp\wamp\www\framework\web\CWebApplication.php(277): CController->run('deletes')
+#7 D:\warp\wamp\www\framework\web\CWebApplication.php(136): CWebApplication->runController('audit/deletes')
+#8 D:\warp\wamp\www\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#9 D:\warp\wamp\www\widgetvote\index.php(13): CApplication->run()
+#10 {main} REQUEST_URI=/widgetvote/index.php/audit/deletes
+2012/12/10 15:50:05 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`vote/tbl_vote_cate_related`, CONSTRAINT `FKtbl_vote_c243216` FOREIGN KEY (`vote_id`) REFERENCES `tbl_vote` (`id`)). The SQL statement executed was: DELETE FROM `tbl_vote` WHERE id=:ycp0.
+in D:\warp\wamp\www\widgetvote\protected\controllers\AuditController.php (107)
+in D:\warp\wamp\www\widgetvote\index.php (13)
+2012/12/10 15:50:05 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`vote/tbl_vote_cate_related`, CONSTRAINT `FKtbl_vote_c243216` FOREIGN KEY (`vote_id`) REFERENCES `tbl_vote` (`id`)). The SQL statement executed was: DELETE FROM `tbl_vote` WHERE id=:ycp0' in D:\warp\wamp\www\framework\db\CDbCommand.php:336
+Stack trace:
+#0 D:\warp\wamp\www\framework\db\ar\CActiveRecord.php(1759): CDbCommand->execute()
+#1 D:\warp\wamp\www\widgetvote\protected\controllers\AuditController.php(107): CActiveRecord->deleteAll(Object(CDbCriteria))
+#2 D:\warp\wamp\www\framework\web\actions\CInlineAction.php(50): AuditController->actionDeletes()
+#3 D:\warp\wamp\www\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#4 D:\warp\wamp\www\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#5 D:\warp\wamp\www\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\warp\wamp\www\framework\web\CWebApplication.php(277): CController->run('deletes')
+#7 D:\warp\wamp\www\framework\web\CWebApplication.php(136): CWebApplication->runController('audit/deletes')
+#8 D:\warp\wamp\www\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#9 D:\warp\wamp\www\widgetvote\index.php(13): CApplication->run()
+#10 {main} REQUEST_URI=/widgetvote/index.php/audit/deletes
+2012/12/10 15:52:32 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`vote/tbl_vote_cate_related`, CONSTRAINT `FKtbl_vote_c243216` FOREIGN KEY (`vote_id`) REFERENCES `tbl_vote` (`id`)). The SQL statement executed was: DELETE FROM `tbl_vote` WHERE id=:ycp0.
+in D:\warp\wamp\www\widgetvote\protected\controllers\AuditController.php (107)
+in D:\warp\wamp\www\widgetvote\index.php (13)
+2012/12/10 15:52:32 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`vote/tbl_vote_cate_related`, CONSTRAINT `FKtbl_vote_c243216` FOREIGN KEY (`vote_id`) REFERENCES `tbl_vote` (`id`)). The SQL statement executed was: DELETE FROM `tbl_vote` WHERE id=:ycp0' in D:\warp\wamp\www\framework\db\CDbCommand.php:336
+Stack trace:
+#0 D:\warp\wamp\www\framework\db\ar\CActiveRecord.php(1759): CDbCommand->execute()
+#1 D:\warp\wamp\www\widgetvote\protected\controllers\AuditController.php(107): CActiveRecord->deleteAll(Object(CDbCriteria))
+#2 D:\warp\wamp\www\framework\web\actions\CInlineAction.php(50): AuditController->actionDeletes()
+#3 D:\warp\wamp\www\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#4 D:\warp\wamp\www\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#5 D:\warp\wamp\www\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\warp\wamp\www\framework\web\CWebApplication.php(277): CController->run('deletes')
+#7 D:\warp\wamp\www\framework\web\CWebApplication.php(136): CWebApplication->runController('audit/deletes')
+#8 D:\warp\wamp\www\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#9 D:\warp\wamp\www\widgetvote\index.php(13): CApplication->run()
+#10 {main} REQUEST_URI=/widgetvote/index.php/audit/deletes
+2012/12/10 15:52:36 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`vote/tbl_vote_cate_related`, CONSTRAINT `FKtbl_vote_c243216` FOREIGN KEY (`vote_id`) REFERENCES `tbl_vote` (`id`)). The SQL statement executed was: DELETE FROM `tbl_vote` WHERE id=:ycp0.
+in D:\warp\wamp\www\widgetvote\protected\controllers\AuditController.php (107)
+in D:\warp\wamp\www\widgetvote\index.php (13)
+2012/12/10 15:52:36 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`vote/tbl_vote_cate_related`, CONSTRAINT `FKtbl_vote_c243216` FOREIGN KEY (`vote_id`) REFERENCES `tbl_vote` (`id`)). The SQL statement executed was: DELETE FROM `tbl_vote` WHERE id=:ycp0' in D:\warp\wamp\www\framework\db\CDbCommand.php:336
+Stack trace:
+#0 D:\warp\wamp\www\framework\db\ar\CActiveRecord.php(1759): CDbCommand->execute()
+#1 D:\warp\wamp\www\widgetvote\protected\controllers\AuditController.php(107): CActiveRecord->deleteAll(Object(CDbCriteria))
+#2 D:\warp\wamp\www\framework\web\actions\CInlineAction.php(50): AuditController->actionDeletes()
+#3 D:\warp\wamp\www\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#4 D:\warp\wamp\www\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#5 D:\warp\wamp\www\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\warp\wamp\www\framework\web\CWebApplication.php(277): CController->run('deletes')
+#7 D:\warp\wamp\www\framework\web\CWebApplication.php(136): CWebApplication->runController('audit/deletes')
+#8 D:\warp\wamp\www\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#9 D:\warp\wamp\www\widgetvote\index.php(13): CApplication->run()
+#10 {main} REQUEST_URI=/widgetvote/index.php/audit/deletes
+2012/12/10 15:53:43 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`vote/tbl_vote_cate_related`, CONSTRAINT `FKtbl_vote_c243216` FOREIGN KEY (`vote_id`) REFERENCES `tbl_vote` (`id`)). The SQL statement executed was: DELETE FROM `tbl_vote` WHERE id=:ycp0.
+in D:\warp\wamp\www\widgetvote\protected\controllers\AuditController.php (107)
+in D:\warp\wamp\www\widgetvote\index.php (13)
+2012/12/10 15:53:43 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`vote/tbl_vote_cate_related`, CONSTRAINT `FKtbl_vote_c243216` FOREIGN KEY (`vote_id`) REFERENCES `tbl_vote` (`id`)). The SQL statement executed was: DELETE FROM `tbl_vote` WHERE id=:ycp0' in D:\warp\wamp\www\framework\db\CDbCommand.php:336
+Stack trace:
+#0 D:\warp\wamp\www\framework\db\ar\CActiveRecord.php(1759): CDbCommand->execute()
+#1 D:\warp\wamp\www\widgetvote\protected\controllers\AuditController.php(107): CActiveRecord->deleteAll(Object(CDbCriteria))
+#2 D:\warp\wamp\www\framework\web\actions\CInlineAction.php(50): AuditController->actionDeletes()
+#3 D:\warp\wamp\www\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#4 D:\warp\wamp\www\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#5 D:\warp\wamp\www\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\warp\wamp\www\framework\web\CWebApplication.php(277): CController->run('deletes')
+#7 D:\warp\wamp\www\framework\web\CWebApplication.php(136): CWebApplication->runController('audit/deletes')
+#8 D:\warp\wamp\www\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#9 D:\warp\wamp\www\widgetvote\index.php(13): CApplication->run()
+#10 {main} REQUEST_URI=/widgetvote/index.php/audit/deletes
+2012/12/10 15:53:49 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`vote/tbl_vote_cate_related`, CONSTRAINT `FKtbl_vote_c243216` FOREIGN KEY (`vote_id`) REFERENCES `tbl_vote` (`id`)). The SQL statement executed was: DELETE FROM `tbl_vote` WHERE id=:ycp0.
+in D:\warp\wamp\www\widgetvote\protected\controllers\AuditController.php (107)
+in D:\warp\wamp\www\widgetvote\index.php (13)
+2012/12/10 15:53:49 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`vote/tbl_vote_cate_related`, CONSTRAINT `FKtbl_vote_c243216` FOREIGN KEY (`vote_id`) REFERENCES `tbl_vote` (`id`)). The SQL statement executed was: DELETE FROM `tbl_vote` WHERE id=:ycp0' in D:\warp\wamp\www\framework\db\CDbCommand.php:336
+Stack trace:
+#0 D:\warp\wamp\www\framework\db\ar\CActiveRecord.php(1759): CDbCommand->execute()
+#1 D:\warp\wamp\www\widgetvote\protected\controllers\AuditController.php(107): CActiveRecord->deleteAll(Object(CDbCriteria))
+#2 D:\warp\wamp\www\framework\web\actions\CInlineAction.php(50): AuditController->actionDeletes()
+#3 D:\warp\wamp\www\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#4 D:\warp\wamp\www\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#5 D:\warp\wamp\www\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\warp\wamp\www\framework\web\CWebApplication.php(277): CController->run('deletes')
+#7 D:\warp\wamp\www\framework\web\CWebApplication.php(136): CWebApplication->runController('audit/deletes')
+#8 D:\warp\wamp\www\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#9 D:\warp\wamp\www\widgetvote\index.php(13): CApplication->run()
+#10 {main} REQUEST_URI=/widgetvote/index.php/audit/deletes
+2012/12/10 16:04:56 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`vote/tbl_vote_cate_related`, CONSTRAINT `FKtbl_vote_c243216` FOREIGN KEY (`vote_id`) REFERENCES `tbl_vote` (`id`)). The SQL statement executed was: DELETE FROM `tbl_vote` WHERE id=:ycp0.
+in D:\warp\wamp\www\widgetvote\protected\controllers\AuditController.php (107)
+in D:\warp\wamp\www\widgetvote\index.php (13)
+2012/12/10 16:04:56 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`vote/tbl_vote_cate_related`, CONSTRAINT `FKtbl_vote_c243216` FOREIGN KEY (`vote_id`) REFERENCES `tbl_vote` (`id`)). The SQL statement executed was: DELETE FROM `tbl_vote` WHERE id=:ycp0' in D:\warp\wamp\www\framework\db\CDbCommand.php:336
+Stack trace:
+#0 D:\warp\wamp\www\framework\db\ar\CActiveRecord.php(1759): CDbCommand->execute()
+#1 D:\warp\wamp\www\widgetvote\protected\controllers\AuditController.php(107): CActiveRecord->deleteAll(Object(CDbCriteria))
+#2 D:\warp\wamp\www\framework\web\actions\CInlineAction.php(50): AuditController->actionDeletes()
+#3 D:\warp\wamp\www\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#4 D:\warp\wamp\www\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#5 D:\warp\wamp\www\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\warp\wamp\www\framework\web\CWebApplication.php(277): CController->run('deletes')
+#7 D:\warp\wamp\www\framework\web\CWebApplication.php(136): CWebApplication->runController('audit/deletes')
+#8 D:\warp\wamp\www\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#9 D:\warp\wamp\www\widgetvote\index.php(13): CApplication->run()
+#10 {main} REQUEST_URI=/widgetvote/index.php/audit/deletes
+2012/12/10 16:09:25 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`vote/tbl_vote_cate_related`, CONSTRAINT `FKtbl_vote_c243216` FOREIGN KEY (`vote_id`) REFERENCES `tbl_vote` (`id`)). The SQL statement executed was: DELETE FROM `tbl_vote` WHERE id=:ycp0.
+in D:\warp\wamp\www\widgetvote\protected\controllers\AuditController.php (107)
+in D:\warp\wamp\www\widgetvote\index.php (13)
+2012/12/10 16:09:25 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`vote/tbl_vote_cate_related`, CONSTRAINT `FKtbl_vote_c243216` FOREIGN KEY (`vote_id`) REFERENCES `tbl_vote` (`id`)). The SQL statement executed was: DELETE FROM `tbl_vote` WHERE id=:ycp0' in D:\warp\wamp\www\framework\db\CDbCommand.php:336
+Stack trace:
+#0 D:\warp\wamp\www\framework\db\ar\CActiveRecord.php(1759): CDbCommand->execute()
+#1 D:\warp\wamp\www\widgetvote\protected\controllers\AuditController.php(107): CActiveRecord->deleteAll(Object(CDbCriteria))
+#2 D:\warp\wamp\www\framework\web\actions\CInlineAction.php(50): AuditController->actionDeletes()
+#3 D:\warp\wamp\www\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#4 D:\warp\wamp\www\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#5 D:\warp\wamp\www\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\warp\wamp\www\framework\web\CWebApplication.php(277): CController->run('deletes')
+#7 D:\warp\wamp\www\framework\web\CWebApplication.php(136): CWebApplication->runController('audit/deletes')
+#8 D:\warp\wamp\www\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#9 D:\warp\wamp\www\widgetvote\index.php(13): CApplication->run()
+#10 {main} REQUEST_URI=/widgetvote/index.php/audit/deletes
+2012/12/10 16:13:35 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`vote/tbl_vote_cate_related`, CONSTRAINT `FKtbl_vote_c243216` FOREIGN KEY (`vote_id`) REFERENCES `tbl_vote` (`id`)). The SQL statement executed was: DELETE FROM `tbl_vote` WHERE id=:ycp0.
+in D:\warp\wamp\www\widgetvote\protected\controllers\AuditController.php (107)
+in D:\warp\wamp\www\widgetvote\index.php (13)
+2012/12/10 16:13:35 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`vote/tbl_vote_cate_related`, CONSTRAINT `FKtbl_vote_c243216` FOREIGN KEY (`vote_id`) REFERENCES `tbl_vote` (`id`)). The SQL statement executed was: DELETE FROM `tbl_vote` WHERE id=:ycp0' in D:\warp\wamp\www\framework\db\CDbCommand.php:336
+Stack trace:
+#0 D:\warp\wamp\www\framework\db\ar\CActiveRecord.php(1759): CDbCommand->execute()
+#1 D:\warp\wamp\www\widgetvote\protected\controllers\AuditController.php(107): CActiveRecord->deleteAll(Object(CDbCriteria))
+#2 D:\warp\wamp\www\framework\web\actions\CInlineAction.php(50): AuditController->actionDeletes()
+#3 D:\warp\wamp\www\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#4 D:\warp\wamp\www\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#5 D:\warp\wamp\www\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\warp\wamp\www\framework\web\CWebApplication.php(277): CController->run('deletes')
+#7 D:\warp\wamp\www\framework\web\CWebApplication.php(136): CWebApplication->runController('audit/deletes')
+#8 D:\warp\wamp\www\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#9 D:\warp\wamp\www\widgetvote\index.php(13): CApplication->run()
+#10 {main} REQUEST_URI=/widgetvote/index.php/audit/deletes
+2012/12/10 16:15:33 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`vote/tbl_vote_cate_related`, CONSTRAINT `FKtbl_vote_c243216` FOREIGN KEY (`vote_id`) REFERENCES `tbl_vote` (`id`)). The SQL statement executed was: DELETE FROM `tbl_vote` WHERE id=:ycp0.
+in D:\warp\wamp\www\widgetvote\protected\controllers\AuditController.php (110)
+in D:\warp\wamp\www\widgetvote\index.php (13)
+2012/12/10 16:15:33 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`vote/tbl_vote_cate_related`, CONSTRAINT `FKtbl_vote_c243216` FOREIGN KEY (`vote_id`) REFERENCES `tbl_vote` (`id`)). The SQL statement executed was: DELETE FROM `tbl_vote` WHERE id=:ycp0' in D:\warp\wamp\www\framework\db\CDbCommand.php:336
+Stack trace:
+#0 D:\warp\wamp\www\framework\db\ar\CActiveRecord.php(1759): CDbCommand->execute()
+#1 D:\warp\wamp\www\widgetvote\protected\controllers\AuditController.php(110): CActiveRecord->deleteAll(Object(CDbCriteria))
+#2 D:\warp\wamp\www\framework\web\actions\CInlineAction.php(50): AuditController->actionDeletes()
+#3 D:\warp\wamp\www\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#4 D:\warp\wamp\www\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#5 D:\warp\wamp\www\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\warp\wamp\www\framework\web\CWebApplication.php(277): CController->run('deletes')
+#7 D:\warp\wamp\www\framework\web\CWebApplication.php(136): CWebApplication->runController('audit/deletes')
+#8 D:\warp\wamp\www\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#9 D:\warp\wamp\www\widgetvote\index.php(13): CApplication->run()
+#10 {main} REQUEST_URI=/widgetvote/index.php/audit/deletes
+2012/12/10 16:17:23 [error] [php] reset() expects parameter 1 to be array, integer given (D:\warp\wamp\www\framework\db\schema\CDbCriteria.php:233)
+Stack trace:
+#0 D:\warp\wamp\www\framework\web\actions\CInlineAction.php(50): AuditController->actionDel()
+#1 D:\warp\wamp\www\framework\web\CController.php(300): CInlineAction->runWithParams()
+#2 D:\warp\wamp\www\framework\web\CController.php(278): AuditController->runAction()
+#3 D:\warp\wamp\www\framework\web\CController.php(257): AuditController->runActionWithFilters()
+#4 D:\warp\wamp\www\framework\web\CWebApplication.php(277): AuditController->run()
+#5 D:\warp\wamp\www\framework\web\CWebApplication.php(136): CWebApplication->runController()
+#6 D:\warp\wamp\www\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#7 D:\warp\wamp\www\widgetvote\index.php(13): CWebApplication->run()
+REQUEST_URI=/widgetvote/index.php/audit/del
+in D:\warp\wamp\www\widgetvote\protected\controllers\AuditController.php (105)
+in D:\warp\wamp\www\widgetvote\index.php (13)
+2012/12/10 16:17:51 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`vote/tbl_vote_cate_related`, CONSTRAINT `FKtbl_vote_c243216` FOREIGN KEY (`vote_id`) REFERENCES `tbl_vote` (`id`)). The SQL statement executed was: DELETE FROM `tbl_vote` WHERE id=:ycp0.
+in D:\warp\wamp\www\widgetvote\protected\controllers\AuditController.php (107)
+in D:\warp\wamp\www\widgetvote\index.php (13)
+2012/12/10 16:17:51 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`vote/tbl_vote_cate_related`, CONSTRAINT `FKtbl_vote_c243216` FOREIGN KEY (`vote_id`) REFERENCES `tbl_vote` (`id`)). The SQL statement executed was: DELETE FROM `tbl_vote` WHERE id=:ycp0' in D:\warp\wamp\www\framework\db\CDbCommand.php:336
+Stack trace:
+#0 D:\warp\wamp\www\framework\db\ar\CActiveRecord.php(1759): CDbCommand->execute()
+#1 D:\warp\wamp\www\widgetvote\protected\controllers\AuditController.php(107): CActiveRecord->deleteAll(Object(CDbCriteria))
+#2 D:\warp\wamp\www\framework\web\actions\CInlineAction.php(50): AuditController->actionDel()
+#3 D:\warp\wamp\www\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#4 D:\warp\wamp\www\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#5 D:\warp\wamp\www\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\warp\wamp\www\framework\web\CWebApplication.php(277): CController->run('del')
+#7 D:\warp\wamp\www\framework\web\CWebApplication.php(136): CWebApplication->runController('audit/del')
+#8 D:\warp\wamp\www\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#9 D:\warp\wamp\www\widgetvote\index.php(13): CApplication->run()
+#10 {main} REQUEST_URI=/widgetvote/index.php/audit/del
+2012/12/10 16:18:40 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`vote/tbl_vote_cate_related`, CONSTRAINT `FKtbl_vote_c243216` FOREIGN KEY (`vote_id`) REFERENCES `tbl_vote` (`id`)). The SQL statement executed was: DELETE FROM `tbl_vote` WHERE id=:ycp0.
+in D:\warp\wamp\www\widgetvote\protected\controllers\AuditController.php (108)
+in D:\warp\wamp\www\widgetvote\index.php (13)
+2012/12/10 16:18:40 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`vote/tbl_vote_cate_related`, CONSTRAINT `FKtbl_vote_c243216` FOREIGN KEY (`vote_id`) REFERENCES `tbl_vote` (`id`)). The SQL statement executed was: DELETE FROM `tbl_vote` WHERE id=:ycp0' in D:\warp\wamp\www\framework\db\CDbCommand.php:336
+Stack trace:
+#0 D:\warp\wamp\www\framework\db\ar\CActiveRecord.php(1759): CDbCommand->execute()
+#1 D:\warp\wamp\www\widgetvote\protected\controllers\AuditController.php(108): CActiveRecord->deleteAll(Object(CDbCriteria))
+#2 D:\warp\wamp\www\framework\web\actions\CInlineAction.php(50): AuditController->actionDel()
+#3 D:\warp\wamp\www\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#4 D:\warp\wamp\www\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#5 D:\warp\wamp\www\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\warp\wamp\www\framework\web\CWebApplication.php(277): CController->run('del')
+#7 D:\warp\wamp\www\framework\web\CWebApplication.php(136): CWebApplication->runController('audit/del')
+#8 D:\warp\wamp\www\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#9 D:\warp\wamp\www\widgetvote\index.php(13): CApplication->run()
+#10 {main} REQUEST_URI=/widgetvote/index.php/audit/del

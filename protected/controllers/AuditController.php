@@ -1,19 +1,19 @@
 <?php
 
 class AuditController extends Controller {
-
+	
 	/**
 	 * 查看评分审核列表
 	 * 按发起时间倒序排序
 	 */
 	public function actionVlists() {
 		
-		$vote = new Vote();
-		$votes = $vote->listbyid()->search();
-		$this->render('vlists', array(
-				'models' => $votes
-				));
-		
+		$vote = new Vote ();
+		$votes = $vote->listbyid ()->search ();
+		$this->render ( 'vlists', array (
+				'models' => $votes 
+		) );
+	
 	}
 	
 	/**
@@ -21,31 +21,30 @@ class AuditController extends Controller {
 	 */
 	public function actionVapprove() {
 		
-		if(isset($_POST['Vote'])) {
-			$vote = new Vote();
-			$vote->setAttributes($_POST['Vote']);
-			$result = $vote->save();
-			if($result) {
+		var_dump ( $_GET );
+		die ();
+		
+		if (isset ( $_POST ['Vote'] )) {
+			$vote = new Vote ();
+			$vote->setAttributes ( $_POST ['Vote'] );
+			$result = $vote->save ();
+			if ($result) {
 				echo 'success';
 			}
 		} else {
-			$vote = new Vote();
-			$this->render('vapprove', array(
-					'model' => $vote
-					));
+			$vote = new Vote ();
+			$this->render ( 'vapprove', array (
+					'model' => $vote 
+			) );
 		}
-		
-		
-		
+	
 	}
 	
 	/**
 	 * 根据条件搜索投票(根据：标题、发起人、审批人、发起时间、审批时间、审批状态、跟随词条、跟随分类)
 	 */
 	public function actionSearch() {
-		
-		
-		
+	
 	}
 	
 	/**
@@ -53,20 +52,20 @@ class AuditController extends Controller {
 	 */
 	public function actionUpdate() {
 		
-		if(isset($_POST['Vote'])) {
-			$vote = new Vote();
-			$vote->setAttributes($_POST['Vote']);
-			$result = $vote->save();
-			if($result) {
+		if (isset ( $_POST ['Vote'] )) {
+			$vote = new Vote ();
+			$vote->setAttributes ( $_POST ['Vote'] );
+			$result = $vote->save ();
+			if ($result) {
 				echo 'success';
 			}
 		} else {
-			$vote = new Vote();
-			$this->render('update', array(
-					'model' => $vote
-			));
+			$vote = new Vote ();
+			$this->render ( 'update', array (
+					'model' => $vote 
+			) );
 		}
-		
+	
 	}
 	
 	/**
@@ -74,12 +73,12 @@ class AuditController extends Controller {
 	 */
 	public function actionLog() {
 		
-		$vote = new Vote();
+		$vote = new Vote ();
 		$voteOperateLogs = $vote->voteOperateLogs;
-		$this->render('log', array(
-				'models' => $voteOperateLogs
-				));
-		
+		$this->render ( 'log', array (
+				'models' => $voteOperateLogs 
+		) );
+	
 	}
 	
 	/**
@@ -87,17 +86,51 @@ class AuditController extends Controller {
 	 */
 	public function actionCategory() {
 		
-		$vote = new Vote();
+		$vote = new Vote ();
 		$voteCateRelateds = $vote->voteCateRelateds;
-		foreach($voteCateRelateds as $voteCateRelated) {
+		foreach ( $voteCateRelateds as $voteCateRelated ) {
 			$categorys = $voteCateRelated->categorys;
 		}
-		$this->render('category', array(
-				'models' => $categorys
-				));
-		
+		$this->render ( 'category', array (
+				'models' => $categorys 
+		) );
+	
 	}
 	
+	public function actionDel() {
+		
+		$criteria = new CDbCriteria ();
+		$criteria->addInCondition ( 'id', array (
+				26 
+		) );
+		$vote = new Vote ();
+		$result = $vote->deleteAll ( $criteria );
+		var_dump ( $result );
+	
+	}
+	
+	public function actionDeletes() {
+		if (Yii::app ()->request->isPostRequest) {
+			$criteria = new CDbCriteria ();
+			$criteria->addInCondition ( 'id', $_POST ['selectdel'] );
+			// Vote::model()->deleteAll($criteria);
+			
+			$vote = new Vote ();
+			$vote->deleteAll ( $criteria );
+			
+			if (isset ( Yii::app ()->request->isAjaxRequest )) {
+				echo CJSON::encode ( array (
+						'success' => true 
+				) );
+			} else
+				$this->redirect ( isset ( $_POST ['returnUrl'] ) ? $_POST ['returnUrl'] : array (
+						'index' 
+				) );
+		} else {
+			throw new CHttpException ( 400, 'Invalid request. Please do not repeat this request again.' );
+		}
+	}
+
 }
 
 ?>
