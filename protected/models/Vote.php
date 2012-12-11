@@ -82,7 +82,26 @@ class Vote extends ActiveRecord
 		// will receive user inputs.
 		return array_merge(parent::rules(), array(
 				array('verifyCode','captcha','on'=>'insert', 'allowEmpty'=>!CCaptcha::checkRequirements()),
+				array('picpath', 'authenticate','on'=>'insert'),
 		));
+	}
+	
+	public function authenticate($attribute,$params) {
+		if(!$this->hasErrors())
+		{
+			$file = CUploadedFile::getInstance($this, 'picpath');
+			$extensionName = $file->getExtensionName();
+			
+			$arr = array( 'jpg','jpeg','gif','png' );
+			if( !in_array($extensionName, $arr) ) {
+				$this->addError('picpath','仅支持.jpg /.jpeg /.gif /.png格式');
+			}
+			
+			$size = $file->getSize();
+			if($size > 2000000) {
+				$this->addError('picpath','图片大小不超过2M');
+			}
+		}
 	}
 	
 	/**

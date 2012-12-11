@@ -7,7 +7,7 @@ class VoteItemBehavior extends CActiveRecordBehavior {
 		if($owner->isNewRecord) {
 			$owner->itemvotecount = 0;
 		} else {
-			$owner->itemvotecount = $owner->itemvotecount + 1;
+			
 		}
 	
 	}
@@ -17,10 +17,7 @@ class VoteItemBehavior extends CActiveRecordBehavior {
 		if ($owner->isNewRecord) {
 			
 		} else {
-			$vote = new Vote();
-			$vote = $vote->findByPk($owner->vote_id);
-			$vote->counts = $vote->counts + 1;
-			$vote->save();
+			
 		}
 	}
 	

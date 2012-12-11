@@ -22,7 +22,7 @@ class VoteMetadata extends CARMDC
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('title,createremail,voteendtime', 'required'),
+			array('title,votetype', 'required'),
 			array('votetype, counts, createrid, audittype, auditstate', 'numerical', 'integerOnly'=>true),
 			array('title', 'length', 'max'=>14),
 			array('createremail', 'length', 'max'=>100),

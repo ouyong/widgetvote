@@ -21,8 +21,8 @@ class VoteOperateLogMetadata extends CARMDC
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-// 			array('vote_id', 'required'),
-			array('opttime, vote_id', 'numerical', 'integerOnly'=>true),
+			array('vote_id', 'required'),
+			array('vote_id', 'numerical', 'integerOnly'=>true),
 			array('opttype', 'length', 'max'=>64),
 			array('optname', 'length', 'max'=>255),
 			array('content', 'length', 'max'=>125),

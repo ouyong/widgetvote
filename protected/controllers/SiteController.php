@@ -64,6 +64,21 @@ class SiteController extends Controller
 		}
 	}
 	
+	public function UserVote($voteItemid) {
+		
+		$voteItem = new VoteItem();
+		$voteItem = $voteItem->findByPk($voteItemid);
+		$voteItem->itemvotecount = $voteItem->itemvotecount + 1;
+		$result = $voteItem->save();
+		if($result) {
+			$vote = new Vote();
+			$vote = $vote->findByPk($voteItem->vote_id);
+			$vote->counts = $vote->counts + 1;
+			$vote->save();
+		}
+		
+	}
+	
 	/**
 	 * 查看前四个投票（按最新，最热）
 	 */
@@ -75,9 +90,7 @@ class SiteController extends Controller
 		 * 用户投票
 		 */
 		if(isset($_POST['VoteItem']['id'])) {
-			$voteItem = new VoteItem();
-			$voteItem = $voteItem->findByPk($_POST['VoteItem']['id']);
-			$result = $voteItem->save();
+			$this->UserVote($_POST['VoteItem']['id']);
 		}
 		if(isset($_GET['page'])) {
 			$page = $_GET['page'];
@@ -120,9 +133,7 @@ class SiteController extends Controller
 		 * 用户投票
 		 */
 		if(isset($_POST['VoteItem']['id'])) {
-			$voteItem = new VoteItem();
-			$voteItem = $voteItem->findByPk($_POST['VoteItem']['id']);
-			$result = $voteItem->save();
+			$this->UserVote($_POST['VoteItem']['id']);
 		}
 		/**
 		 * 搜索
