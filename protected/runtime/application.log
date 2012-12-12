@@ -6227,3 +6227,525 @@ Stack trace:
 #3 D:\warp\wamp\www\framework\base\CApplication.php(158): CWebApplication->processRequest()
 #4 D:\warp\wamp\www\widgetvote\index.php(13): CApplication->run()
 #5 {main} REQUEST_URI=/widgetvote/index.php/admin/ad
+2012/12/11 18:06:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "css" 动作.' in D:\warp\wamp\www\framework\web\CController.php:477
+Stack trace:
+#0 D:\warp\wamp\www\framework\web\CController.php(262): CController->missingAction('css')
+#1 D:\warp\wamp\www\framework\web\CWebApplication.php(277): CController->run('css')
+#2 D:\warp\wamp\www\framework\web\CWebApplication.php(136): CWebApplication->runController('audit/css/boots...')
+#3 D:\warp\wamp\www\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\warp\wamp\www\widgetvote\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/widgetvote/index.php/audit/css/bootstrap.css
+2012/12/11 18:06:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "css" 动作.' in D:\warp\wamp\www\framework\web\CController.php:477
+Stack trace:
+#0 D:\warp\wamp\www\framework\web\CController.php(262): CController->missingAction('css')
+#1 D:\warp\wamp\www\framework\web\CWebApplication.php(277): CController->run('css')
+#2 D:\warp\wamp\www\framework\web\CWebApplication.php(136): CWebApplication->runController('audit/css/dater...')
+#3 D:\warp\wamp\www\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\warp\wamp\www\widgetvote\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/widgetvote/index.php/audit/css/daterangepicker.css
+2012/12/11 18:06:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in D:\warp\wamp\www\framework\web\CController.php:477
+Stack trace:
+#0 D:\warp\wamp\www\framework\web\CController.php(262): CController->missingAction('js')
+#1 D:\warp\wamp\www\framework\web\CWebApplication.php(277): CController->run('js')
+#2 D:\warp\wamp\www\framework\web\CWebApplication.php(136): CWebApplication->runController('audit/js/datera...')
+#3 D:\warp\wamp\www\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\warp\wamp\www\widgetvote\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/widgetvote/index.php/audit/js/daterangepicker.js
+2012/12/11 18:06:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in D:\warp\wamp\www\framework\web\CController.php:477
+Stack trace:
+#0 D:\warp\wamp\www\framework\web\CController.php(262): CController->missingAction('js')
+#1 D:\warp\wamp\www\framework\web\CWebApplication.php(277): CController->run('js')
+#2 D:\warp\wamp\www\framework\web\CWebApplication.php(136): CWebApplication->runController('audit/js/date.j...')
+#3 D:\warp\wamp\www\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\warp\wamp\www\widgetvote\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/widgetvote/index.php/audit/js/date.js
+2012/12/11 18:06:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "css" 动作.' in D:\warp\wamp\www\framework\web\CController.php:477
+Stack trace:
+#0 D:\warp\wamp\www\framework\web\CController.php(262): CController->missingAction('css')
+#1 D:\warp\wamp\www\framework\web\CWebApplication.php(277): CController->run('css')
+#2 D:\warp\wamp\www\framework\web\CWebApplication.php(136): CWebApplication->runController('audit/css/ifram...')
+#3 D:\warp\wamp\www\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\warp\wamp\www\widgetvote\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/widgetvote/index.php/audit/css/iframstyle.css
+2012/12/11 18:06:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "images" 动作.' in D:\warp\wamp\www\framework\web\CController.php:477
+Stack trace:
+#0 D:\warp\wamp\www\framework\web\CController.php(262): CController->missingAction('images')
+#1 D:\warp\wamp\www\framework\web\CWebApplication.php(277): CController->run('images')
+#2 D:\warp\wamp\www\framework\web\CWebApplication.php(136): CWebApplication->runController('audit/images/c-...')
+#3 D:\warp\wamp\www\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\warp\wamp\www\widgetvote\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/widgetvote/index.php/audit/images/c-icon5.jpg
+2012/12/11 18:06:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "images" 动作.' in D:\warp\wamp\www\framework\web\CController.php:477
+Stack trace:
+#0 D:\warp\wamp\www\framework\web\CController.php(262): CController->missingAction('images')
+#1 D:\warp\wamp\www\framework\web\CWebApplication.php(277): CController->run('images')
+#2 D:\warp\wamp\www\framework\web\CWebApplication.php(136): CWebApplication->runController('audit/images/c-...')
+#3 D:\warp\wamp\www\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\warp\wamp\www\widgetvote\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/widgetvote/index.php/audit/images/c-icon1.jpg
+2012/12/11 18:06:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in D:\warp\wamp\www\framework\web\CController.php:477
+Stack trace:
+#0 D:\warp\wamp\www\framework\web\CController.php(262): CController->missingAction('js')
+#1 D:\warp\wamp\www\framework\web\CWebApplication.php(277): CController->run('js')
+#2 D:\warp\wamp\www\framework\web\CWebApplication.php(136): CWebApplication->runController('audit/js/jquery...')
+#3 D:\warp\wamp\www\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\warp\wamp\www\widgetvote\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/widgetvote/index.php/audit/js/jquery.min.js
+2012/12/11 18:06:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "images" 动作.' in D:\warp\wamp\www\framework\web\CController.php:477
+Stack trace:
+#0 D:\warp\wamp\www\framework\web\CController.php(262): CController->missingAction('images')
+#1 D:\warp\wamp\www\framework\web\CWebApplication.php(277): CController->run('images')
+#2 D:\warp\wamp\www\framework\web\CWebApplication.php(136): CWebApplication->runController('audit/images/c-...')
+#3 D:\warp\wamp\www\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\warp\wamp\www\widgetvote\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/widgetvote/index.php/audit/images/c-icon4.jpg
+2012/12/11 18:06:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "images" 动作.' in D:\warp\wamp\www\framework\web\CController.php:477
+Stack trace:
+#0 D:\warp\wamp\www\framework\web\CController.php(262): CController->missingAction('images')
+#1 D:\warp\wamp\www\framework\web\CWebApplication.php(277): CController->run('images')
+#2 D:\warp\wamp\www\framework\web\CWebApplication.php(136): CWebApplication->runController('audit/images/c-...')
+#3 D:\warp\wamp\www\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\warp\wamp\www\widgetvote\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/widgetvote/index.php/audit/images/c-icon2.jpg
+2012/12/11 18:06:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "images" 动作.' in D:\warp\wamp\www\framework\web\CController.php:477
+Stack trace:
+#0 D:\warp\wamp\www\framework\web\CController.php(262): CController->missingAction('images')
+#1 D:\warp\wamp\www\framework\web\CWebApplication.php(277): CController->run('images')
+#2 D:\warp\wamp\www\framework\web\CWebApplication.php(136): CWebApplication->runController('audit/images/c-...')
+#3 D:\warp\wamp\www\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\warp\wamp\www\widgetvote\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/widgetvote/index.php/audit/images/c-icon3.jpg
+2012/12/11 18:06:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "images" 动作.' in D:\warp\wamp\www\framework\web\CController.php:477
+Stack trace:
+#0 D:\warp\wamp\www\framework\web\CController.php(262): CController->missingAction('images')
+#1 D:\warp\wamp\www\framework\web\CWebApplication.php(277): CController->run('images')
+#2 D:\warp\wamp\www\framework\web\CWebApplication.php(136): CWebApplication->runController('audit/images/c-...')
+#3 D:\warp\wamp\www\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\warp\wamp\www\widgetvote\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/widgetvote/index.php/audit/images/c-icon5.jpg
+2012/12/11 18:06:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "images" 动作.' in D:\warp\wamp\www\framework\web\CController.php:477
+Stack trace:
+#0 D:\warp\wamp\www\framework\web\CController.php(262): CController->missingAction('images')
+#1 D:\warp\wamp\www\framework\web\CWebApplication.php(277): CController->run('images')
+#2 D:\warp\wamp\www\framework\web\CWebApplication.php(136): CWebApplication->runController('audit/images/c-...')
+#3 D:\warp\wamp\www\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\warp\wamp\www\widgetvote\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/widgetvote/index.php/audit/images/c-icon1.jpg
+2012/12/11 18:06:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "images" 动作.' in D:\warp\wamp\www\framework\web\CController.php:477
+Stack trace:
+#0 D:\warp\wamp\www\framework\web\CController.php(262): CController->missingAction('images')
+#1 D:\warp\wamp\www\framework\web\CWebApplication.php(277): CController->run('images')
+#2 D:\warp\wamp\www\framework\web\CWebApplication.php(136): CWebApplication->runController('audit/images/c-...')
+#3 D:\warp\wamp\www\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\warp\wamp\www\widgetvote\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/widgetvote/index.php/audit/images/c-icon4.jpg
+2012/12/11 18:07:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in D:\warp\wamp\www\framework\web\CController.php:477
+Stack trace:
+#0 D:\warp\wamp\www\framework\web\CController.php(262): CController->missingAction('js')
+#1 D:\warp\wamp\www\framework\web\CWebApplication.php(277): CController->run('js')
+#2 D:\warp\wamp\www\framework\web\CWebApplication.php(136): CWebApplication->runController('audit/js/datera...')
+#3 D:\warp\wamp\www\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\warp\wamp\www\widgetvote\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/widgetvote/index.php/audit/js/daterangepicker.js
+2012/12/11 18:07:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in D:\warp\wamp\www\framework\web\CController.php:477
+Stack trace:
+#0 D:\warp\wamp\www\framework\web\CController.php(262): CController->missingAction('js')
+#1 D:\warp\wamp\www\framework\web\CWebApplication.php(277): CController->run('js')
+#2 D:\warp\wamp\www\framework\web\CWebApplication.php(136): CWebApplication->runController('audit/js/date.j...')
+#3 D:\warp\wamp\www\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\warp\wamp\www\widgetvote\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/widgetvote/index.php/audit/js/date.js
+2012/12/11 18:07:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in D:\warp\wamp\www\framework\web\CController.php:477
+Stack trace:
+#0 D:\warp\wamp\www\framework\web\CController.php(262): CController->missingAction('js')
+#1 D:\warp\wamp\www\framework\web\CWebApplication.php(277): CController->run('js')
+#2 D:\warp\wamp\www\framework\web\CWebApplication.php(136): CWebApplication->runController('audit/js/jquery...')
+#3 D:\warp\wamp\www\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\warp\wamp\www\widgetvote\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/widgetvote/index.php/audit/js/jquery.min.js
+2012/12/11 18:07:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "images" 动作.' in D:\warp\wamp\www\framework\web\CController.php:477
+Stack trace:
+#0 D:\warp\wamp\www\framework\web\CController.php(262): CController->missingAction('images')
+#1 D:\warp\wamp\www\framework\web\CWebApplication.php(277): CController->run('images')
+#2 D:\warp\wamp\www\framework\web\CWebApplication.php(136): CWebApplication->runController('audit/images/c-...')
+#3 D:\warp\wamp\www\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\warp\wamp\www\widgetvote\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/widgetvote/index.php/audit/images/c-icon4.jpg
+2012/12/11 18:07:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "images" 动作.' in D:\warp\wamp\www\framework\web\CController.php:477
+Stack trace:
+#0 D:\warp\wamp\www\framework\web\CController.php(262): CController->missingAction('images')
+#1 D:\warp\wamp\www\framework\web\CWebApplication.php(277): CController->run('images')
+#2 D:\warp\wamp\www\framework\web\CWebApplication.php(136): CWebApplication->runController('audit/images/c-...')
+#3 D:\warp\wamp\www\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\warp\wamp\www\widgetvote\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/widgetvote/index.php/audit/images/c-icon1.jpg
+2012/12/11 18:07:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "images" 动作.' in D:\warp\wamp\www\framework\web\CController.php:477
+Stack trace:
+#0 D:\warp\wamp\www\framework\web\CController.php(262): CController->missingAction('images')
+#1 D:\warp\wamp\www\framework\web\CWebApplication.php(277): CController->run('images')
+#2 D:\warp\wamp\www\framework\web\CWebApplication.php(136): CWebApplication->runController('audit/images/c-...')
+#3 D:\warp\wamp\www\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\warp\wamp\www\widgetvote\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/widgetvote/index.php/audit/images/c-icon3.jpg
+2012/12/11 18:07:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "images" 动作.' in D:\warp\wamp\www\framework\web\CController.php:477
+Stack trace:
+#0 D:\warp\wamp\www\framework\web\CController.php(262): CController->missingAction('images')
+#1 D:\warp\wamp\www\framework\web\CWebApplication.php(277): CController->run('images')
+#2 D:\warp\wamp\www\framework\web\CWebApplication.php(136): CWebApplication->runController('audit/images/c-...')
+#3 D:\warp\wamp\www\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\warp\wamp\www\widgetvote\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/widgetvote/index.php/audit/images/c-icon2.jpg
+2012/12/11 18:07:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "images" 动作.' in D:\warp\wamp\www\framework\web\CController.php:477
+Stack trace:
+#0 D:\warp\wamp\www\framework\web\CController.php(262): CController->missingAction('images')
+#1 D:\warp\wamp\www\framework\web\CWebApplication.php(277): CController->run('images')
+#2 D:\warp\wamp\www\framework\web\CWebApplication.php(136): CWebApplication->runController('audit/images/c-...')
+#3 D:\warp\wamp\www\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\warp\wamp\www\widgetvote\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/widgetvote/index.php/audit/images/c-icon5.jpg
+2012/12/11 18:08:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "images" 动作.' in D:\warp\wamp\www\framework\web\CController.php:477
+Stack trace:
+#0 D:\warp\wamp\www\framework\web\CController.php(262): CController->missingAction('images')
+#1 D:\warp\wamp\www\framework\web\CWebApplication.php(277): CController->run('images')
+#2 D:\warp\wamp\www\framework\web\CWebApplication.php(136): CWebApplication->runController('audit/images/c-...')
+#3 D:\warp\wamp\www\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\warp\wamp\www\widgetvote\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/widgetvote/index.php/audit/images/c-icon1.jpg
+2012/12/11 18:08:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "images" 动作.' in D:\warp\wamp\www\framework\web\CController.php:477
+Stack trace:
+#0 D:\warp\wamp\www\framework\web\CController.php(262): CController->missingAction('images')
+#1 D:\warp\wamp\www\framework\web\CWebApplication.php(277): CController->run('images')
+#2 D:\warp\wamp\www\framework\web\CWebApplication.php(136): CWebApplication->runController('audit/images/c-...')
+#3 D:\warp\wamp\www\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\warp\wamp\www\widgetvote\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/widgetvote/index.php/audit/images/c-icon2.jpg
+2012/12/11 18:08:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "images" 动作.' in D:\warp\wamp\www\framework\web\CController.php:477
+Stack trace:
+#0 D:\warp\wamp\www\framework\web\CController.php(262): CController->missingAction('images')
+#1 D:\warp\wamp\www\framework\web\CWebApplication.php(277): CController->run('images')
+#2 D:\warp\wamp\www\framework\web\CWebApplication.php(136): CWebApplication->runController('audit/images/c-...')
+#3 D:\warp\wamp\www\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\warp\wamp\www\widgetvote\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/widgetvote/index.php/audit/images/c-icon3.jpg
+2012/12/11 18:08:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "images" 动作.' in D:\warp\wamp\www\framework\web\CController.php:477
+Stack trace:
+#0 D:\warp\wamp\www\framework\web\CController.php(262): CController->missingAction('images')
+#1 D:\warp\wamp\www\framework\web\CWebApplication.php(277): CController->run('images')
+#2 D:\warp\wamp\www\framework\web\CWebApplication.php(136): CWebApplication->runController('audit/images/c-...')
+#3 D:\warp\wamp\www\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\warp\wamp\www\widgetvote\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/widgetvote/index.php/audit/images/c-icon4.jpg
+2012/12/11 18:08:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "images" 动作.' in D:\warp\wamp\www\framework\web\CController.php:477
+Stack trace:
+#0 D:\warp\wamp\www\framework\web\CController.php(262): CController->missingAction('images')
+#1 D:\warp\wamp\www\framework\web\CWebApplication.php(277): CController->run('images')
+#2 D:\warp\wamp\www\framework\web\CWebApplication.php(136): CWebApplication->runController('audit/images/c-...')
+#3 D:\warp\wamp\www\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\warp\wamp\www\widgetvote\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/widgetvote/index.php/audit/images/c-icon5.jpg
+2012/12/11 18:11:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "images" 动作.' in D:\warp\wamp\www\framework\web\CController.php:477
+Stack trace:
+#0 D:\warp\wamp\www\framework\web\CController.php(262): CController->missingAction('images')
+#1 D:\warp\wamp\www\framework\web\CWebApplication.php(277): CController->run('images')
+#2 D:\warp\wamp\www\framework\web\CWebApplication.php(136): CWebApplication->runController('audit/images/hd...')
+#3 D:\warp\wamp\www\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\warp\wamp\www\widgetvote\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/widgetvote/index.php/audit/images/hd_tc_close.jpg
+2012/12/11 18:11:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "images" 动作.' in D:\warp\wamp\www\framework\web\CController.php:477
+Stack trace:
+#0 D:\warp\wamp\www\framework\web\CController.php(262): CController->missingAction('images')
+#1 D:\warp\wamp\www\framework\web\CWebApplication.php(277): CController->run('images')
+#2 D:\warp\wamp\www\framework\web\CWebApplication.php(136): CWebApplication->runController('audit/images/hd...')
+#3 D:\warp\wamp\www\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\warp\wamp\www\widgetvote\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/widgetvote/index.php/audit/images/hd_tc_close_hover.jpg
+2012/12/11 18:11:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "images" 动作.' in D:\warp\wamp\www\framework\web\CController.php:477
+Stack trace:
+#0 D:\warp\wamp\www\framework\web\CController.php(262): CController->missingAction('images')
+#1 D:\warp\wamp\www\framework\web\CWebApplication.php(277): CController->run('images')
+#2 D:\warp\wamp\www\framework\web\CWebApplication.php(136): CWebApplication->runController('audit/images/hd...')
+#3 D:\warp\wamp\www\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\warp\wamp\www\widgetvote\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/widgetvote/index.php/audit/images/hd_tc_close_hover.jpg
+2012/12/11 18:11:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "images" 动作.' in D:\warp\wamp\www\framework\web\CController.php:477
+Stack trace:
+#0 D:\warp\wamp\www\framework\web\CController.php(262): CController->missingAction('images')
+#1 D:\warp\wamp\www\framework\web\CWebApplication.php(277): CController->run('images')
+#2 D:\warp\wamp\www\framework\web\CWebApplication.php(136): CWebApplication->runController('audit/images/hd...')
+#3 D:\warp\wamp\www\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\warp\wamp\www\widgetvote\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/widgetvote/index.php/audit/images/hd_tc_close_hover.jpg
+2012/12/11 18:11:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "images" 动作.' in D:\warp\wamp\www\framework\web\CController.php:477
+Stack trace:
+#0 D:\warp\wamp\www\framework\web\CController.php(262): CController->missingAction('images')
+#1 D:\warp\wamp\www\framework\web\CWebApplication.php(277): CController->run('images')
+#2 D:\warp\wamp\www\framework\web\CWebApplication.php(136): CWebApplication->runController('audit/images/hd...')
+#3 D:\warp\wamp\www\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\warp\wamp\www\widgetvote\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/widgetvote/index.php/audit/images/hd_tc_close.jpg
+2012/12/11 18:11:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "images" 动作.' in D:\warp\wamp\www\framework\web\CController.php:477
+Stack trace:
+#0 D:\warp\wamp\www\framework\web\CController.php(262): CController->missingAction('images')
+#1 D:\warp\wamp\www\framework\web\CWebApplication.php(277): CController->run('images')
+#2 D:\warp\wamp\www\framework\web\CWebApplication.php(136): CWebApplication->runController('audit/images/hd...')
+#3 D:\warp\wamp\www\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\warp\wamp\www\widgetvote\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/widgetvote/index.php/audit/images/hd_tc_close_hover.jpg
+2012/12/11 18:11:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "images" 动作.' in D:\warp\wamp\www\framework\web\CController.php:477
+Stack trace:
+#0 D:\warp\wamp\www\framework\web\CController.php(262): CController->missingAction('images')
+#1 D:\warp\wamp\www\framework\web\CWebApplication.php(277): CController->run('images')
+#2 D:\warp\wamp\www\framework\web\CWebApplication.php(136): CWebApplication->runController('audit/images/hd...')
+#3 D:\warp\wamp\www\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\warp\wamp\www\widgetvote\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/widgetvote/index.php/audit/images/hd_tc_close.jpg
+2012/12/11 18:11:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "images" 动作.' in D:\warp\wamp\www\framework\web\CController.php:477
+Stack trace:
+#0 D:\warp\wamp\www\framework\web\CController.php(262): CController->missingAction('images')
+#1 D:\warp\wamp\www\framework\web\CWebApplication.php(277): CController->run('images')
+#2 D:\warp\wamp\www\framework\web\CWebApplication.php(136): CWebApplication->runController('audit/images/hd...')
+#3 D:\warp\wamp\www\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\warp\wamp\www\widgetvote\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/widgetvote/index.php/audit/images/hd_tc_close_hover.jpg
+2012/12/11 18:11:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "images" 动作.' in D:\warp\wamp\www\framework\web\CController.php:477
+Stack trace:
+#0 D:\warp\wamp\www\framework\web\CController.php(262): CController->missingAction('images')
+#1 D:\warp\wamp\www\framework\web\CWebApplication.php(277): CController->run('images')
+#2 D:\warp\wamp\www\framework\web\CWebApplication.php(136): CWebApplication->runController('audit/images/hd...')
+#3 D:\warp\wamp\www\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\warp\wamp\www\widgetvote\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/widgetvote/index.php/audit/images/hd_tc_close_hover.jpg
+2012/12/11 18:11:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "images" 动作.' in D:\warp\wamp\www\framework\web\CController.php:477
+Stack trace:
+#0 D:\warp\wamp\www\framework\web\CController.php(262): CController->missingAction('images')
+#1 D:\warp\wamp\www\framework\web\CWebApplication.php(277): CController->run('images')
+#2 D:\warp\wamp\www\framework\web\CWebApplication.php(136): CWebApplication->runController('audit/images/hd...')
+#3 D:\warp\wamp\www\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\warp\wamp\www\widgetvote\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/widgetvote/index.php/audit/images/hd_tc_close_hover.jpg
+2012/12/11 18:11:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "images" 动作.' in D:\warp\wamp\www\framework\web\CController.php:477
+Stack trace:
+#0 D:\warp\wamp\www\framework\web\CController.php(262): CController->missingAction('images')
+#1 D:\warp\wamp\www\framework\web\CWebApplication.php(277): CController->run('images')
+#2 D:\warp\wamp\www\framework\web\CWebApplication.php(136): CWebApplication->runController('audit/images/hd...')
+#3 D:\warp\wamp\www\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\warp\wamp\www\widgetvote\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/widgetvote/index.php/audit/images/hd_tc_close_hover.jpg
+2012/12/11 18:11:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "images" 动作.' in D:\warp\wamp\www\framework\web\CController.php:477
+Stack trace:
+#0 D:\warp\wamp\www\framework\web\CController.php(262): CController->missingAction('images')
+#1 D:\warp\wamp\www\framework\web\CWebApplication.php(277): CController->run('images')
+#2 D:\warp\wamp\www\framework\web\CWebApplication.php(136): CWebApplication->runController('audit/images/hd...')
+#3 D:\warp\wamp\www\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\warp\wamp\www\widgetvote\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/widgetvote/index.php/audit/images/hd_tc_close_hover.jpg
+2012/12/11 18:11:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "images" 动作.' in D:\warp\wamp\www\framework\web\CController.php:477
+Stack trace:
+#0 D:\warp\wamp\www\framework\web\CController.php(262): CController->missingAction('images')
+#1 D:\warp\wamp\www\framework\web\CWebApplication.php(277): CController->run('images')
+#2 D:\warp\wamp\www\framework\web\CWebApplication.php(136): CWebApplication->runController('audit/images/hd...')
+#3 D:\warp\wamp\www\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\warp\wamp\www\widgetvote\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/widgetvote/index.php/audit/images/hd_tc_close.jpg
+2012/12/11 18:15:09 [error] [php] Undefined variable: form (D:\warp\wamp\www\widgetvote\protected\views\audit\vlists.php:37)
+Stack trace:
+#0 D:\warp\wamp\www\framework\web\CController.php(866): AuditController->renderFile()
+#1 D:\warp\wamp\www\framework\web\CController.php(779): AuditController->renderPartial()
+#2 D:\warp\wamp\www\widgetvote\protected\controllers\AuditController.php(16): AuditController->render()
+#3 D:\warp\wamp\www\framework\web\actions\CInlineAction.php(50): AuditController->actionVlists()
+#4 D:\warp\wamp\www\framework\web\CController.php(300): CInlineAction->runWithParams()
+#5 D:\warp\wamp\www\framework\web\CController.php(278): AuditController->runAction()
+#6 D:\warp\wamp\www\framework\web\CController.php(257): AuditController->runActionWithFilters()
+#7 D:\warp\wamp\www\framework\web\CWebApplication.php(277): AuditController->run()
+#8 D:\warp\wamp\www\framework\web\CWebApplication.php(136): CWebApplication->runController()
+#9 D:\warp\wamp\www\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#10 D:\warp\wamp\www\widgetvote\index.php(13): CWebApplication->run()
+REQUEST_URI=/widgetvote/index.php/audit/vlists
+in D:\warp\wamp\www\widgetvote\protected\views\audit\vlists.php (37)
+in D:\warp\wamp\www\widgetvote\protected\controllers\AuditController.php (16)
+in D:\warp\wamp\www\widgetvote\index.php (13)
+2012/12/11 18:39:05 [error] [php] Undefined variable: dataProvider (D:\warp\wamp\www\widgetvote\protected\views\audit\vlists.php:163)
+Stack trace:
+#0 D:\warp\wamp\www\framework\web\CController.php(866): AuditController->renderFile()
+#1 D:\warp\wamp\www\framework\web\CController.php(779): AuditController->renderPartial()
+#2 D:\warp\wamp\www\widgetvote\protected\controllers\AuditController.php(16): AuditController->render()
+#3 D:\warp\wamp\www\framework\web\actions\CInlineAction.php(50): AuditController->actionVlists()
+#4 D:\warp\wamp\www\framework\web\CController.php(300): CInlineAction->runWithParams()
+#5 D:\warp\wamp\www\framework\web\CController.php(278): AuditController->runAction()
+#6 D:\warp\wamp\www\framework\web\CController.php(257): AuditController->runActionWithFilters()
+#7 D:\warp\wamp\www\framework\web\CWebApplication.php(277): AuditController->run()
+#8 D:\warp\wamp\www\framework\web\CWebApplication.php(136): CWebApplication->runController()
+#9 D:\warp\wamp\www\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#10 D:\warp\wamp\www\widgetvote\index.php(13): CWebApplication->run()
+REQUEST_URI=/widgetvote/index.php/audit/vlists
+in D:\warp\wamp\www\widgetvote\protected\views\audit\vlists.php (163)
+in D:\warp\wamp\www\widgetvote\protected\controllers\AuditController.php (16)
+in D:\warp\wamp\www\widgetvote\index.php (13)
+2012/12/11 18:39:15 [error] [php] Undefined variable: votes (D:\warp\wamp\www\widgetvote\protected\views\audit\vlists.php:163)
+Stack trace:
+#0 D:\warp\wamp\www\framework\web\CController.php(866): AuditController->renderFile()
+#1 D:\warp\wamp\www\framework\web\CController.php(779): AuditController->renderPartial()
+#2 D:\warp\wamp\www\widgetvote\protected\controllers\AuditController.php(16): AuditController->render()
+#3 D:\warp\wamp\www\framework\web\actions\CInlineAction.php(50): AuditController->actionVlists()
+#4 D:\warp\wamp\www\framework\web\CController.php(300): CInlineAction->runWithParams()
+#5 D:\warp\wamp\www\framework\web\CController.php(278): AuditController->runAction()
+#6 D:\warp\wamp\www\framework\web\CController.php(257): AuditController->runActionWithFilters()
+#7 D:\warp\wamp\www\framework\web\CWebApplication.php(277): AuditController->run()
+#8 D:\warp\wamp\www\framework\web\CWebApplication.php(136): CWebApplication->runController()
+#9 D:\warp\wamp\www\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#10 D:\warp\wamp\www\widgetvote\index.php(13): CWebApplication->run()
+REQUEST_URI=/widgetvote/index.php/audit/vlists
+in D:\warp\wamp\www\widgetvote\protected\views\audit\vlists.php (163)
+in D:\warp\wamp\www\widgetvote\protected\controllers\AuditController.php (16)
+in D:\warp\wamp\www\widgetvote\index.php (13)
+2012/12/11 19:01:03 [error] [php] Undefined variable: dataProvider (D:\warp\wamp\www\widgetvote\protected\views\audit\vlists.php:169)
+Stack trace:
+#0 D:\warp\wamp\www\framework\web\CController.php(866): AuditController->renderFile()
+#1 D:\warp\wamp\www\framework\web\CController.php(779): AuditController->renderPartial()
+#2 D:\warp\wamp\www\widgetvote\protected\controllers\AuditController.php(16): AuditController->render()
+#3 D:\warp\wamp\www\framework\web\actions\CInlineAction.php(50): AuditController->actionVlists()
+#4 D:\warp\wamp\www\framework\web\CController.php(300): CInlineAction->runWithParams()
+#5 D:\warp\wamp\www\framework\web\CController.php(278): AuditController->runAction()
+#6 D:\warp\wamp\www\framework\web\CController.php(257): AuditController->runActionWithFilters()
+#7 D:\warp\wamp\www\framework\web\CWebApplication.php(277): AuditController->run()
+#8 D:\warp\wamp\www\framework\web\CWebApplication.php(136): CWebApplication->runController()
+#9 D:\warp\wamp\www\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#10 D:\warp\wamp\www\widgetvote\index.php(13): CWebApplication->run()
+REQUEST_URI=/widgetvote/index.php/audit/vlists
+in D:\warp\wamp\www\widgetvote\protected\views\audit\vlists.php (169)
+in D:\warp\wamp\www\widgetvote\protected\controllers\AuditController.php (16)
+in D:\warp\wamp\www\widgetvote\index.php (13)
+2012/12/11 19:35:53 [error] [php] Trying to get property of non-object (D:\warp\wamp\www\widgetvote\protected\controllers\AuditController.php:114)
+Stack trace:
+#0 D:\warp\wamp\www\framework\web\CController.php(278): AuditController->runAction()
+#1 D:\warp\wamp\www\framework\web\CController.php(257): AuditController->runActionWithFilters()
+#2 D:\warp\wamp\www\framework\web\CWebApplication.php(277): AuditController->run()
+#3 D:\warp\wamp\www\framework\web\CWebApplication.php(136): CWebApplication->runController()
+#4 D:\warp\wamp\www\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#5 D:\warp\wamp\www\widgetvote\index.php(13): CWebApplication->run()
+REQUEST_URI=/widgetvote/index.php/audit/search
+in D:\warp\wamp\www\widgetvote\protected\controllers\AuditController.php (114)
+in D:\warp\wamp\www\widgetvote\index.php (13)
+2012/12/11 20:07:01 [error] [exception.CException] exception 'CException' with message 'AuditController 在它的 view "D:\warp\wamp\www\widgetvote\protected\views\audit\vlists.php" 中含有未被适当巢状套叠的 widget 标签. CJuiDialog widget 中没有呼叫 endWidget().' in D:\warp\wamp\www\framework\web\CBaseController.php:94
+Stack trace:
+#0 D:\warp\wamp\www\framework\web\CController.php(866): CBaseController->renderFile('D:\warp\wamp\ww...', Array, true)
+#1 D:\warp\wamp\www\framework\web\CController.php(779): CController->renderPartial('vlists', Array, true)
+#2 D:\warp\wamp\www\widgetvote\protected\controllers\AuditController.php(16): CController->render('vlists', Array)
+#3 D:\warp\wamp\www\framework\web\actions\CInlineAction.php(50): AuditController->actionVlists()
+#4 D:\warp\wamp\www\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#5 D:\warp\wamp\www\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#6 D:\warp\wamp\www\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\warp\wamp\www\framework\web\CWebApplication.php(277): CController->run('vlists')
+#8 D:\warp\wamp\www\framework\web\CWebApplication.php(136): CWebApplication->runController('audit/vlists')
+#9 D:\warp\wamp\www\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#10 D:\warp\wamp\www\widgetvote\index.php(13): CApplication->run()
+#11 {main} REQUEST_URI=/widgetvote/index.php/audit/vlists
+2012/12/11 20:07:34 [error] [exception.CException] exception 'CException' with message 'AuditController 在它的 view "D:\warp\wamp\www\widgetvote\protected\views\audit\vlists.php" 中含有未被适当巢状套叠的 widget 标签. CJuiDialog widget 中没有呼叫 endWidget().' in D:\warp\wamp\www\framework\web\CBaseController.php:94
+Stack trace:
+#0 D:\warp\wamp\www\framework\web\CController.php(866): CBaseController->renderFile('D:\warp\wamp\ww...', Array, true)
+#1 D:\warp\wamp\www\framework\web\CController.php(779): CController->renderPartial('vlists', Array, true)
+#2 D:\warp\wamp\www\widgetvote\protected\controllers\AuditController.php(16): CController->render('vlists', Array)
+#3 D:\warp\wamp\www\framework\web\actions\CInlineAction.php(50): AuditController->actionVlists()
+#4 D:\warp\wamp\www\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#5 D:\warp\wamp\www\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#6 D:\warp\wamp\www\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\warp\wamp\www\framework\web\CWebApplication.php(277): CController->run('vlists')
+#8 D:\warp\wamp\www\framework\web\CWebApplication.php(136): CWebApplication->runController('audit/vlists')
+#9 D:\warp\wamp\www\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#10 D:\warp\wamp\www\widgetvote\index.php(13): CApplication->run()
+#11 {main} REQUEST_URI=/widgetvote/index.php/audit/vlists
+2012/12/11 20:51:14 [error] [exception.CException] exception 'CException' with message '属性 "CLinkColumn.options" 未被定义.' in D:\warp\wamp\www\framework\base\CComponent.php:174
+Stack trace:
+#0 D:\warp\wamp\www\framework\YiiBase.php(225): CComponent->__set('options', Array)
+#1 D:\warp\wamp\www\framework\zii\widgets\grid\CGridView.php(308): YiiBase::createComponent(Array, Object(CGridView))
+#2 D:\warp\wamp\www\framework\zii\widgets\grid\CGridView.php(279): CGridView->initColumns()
+#3 D:\warp\wamp\www\framework\web\CBaseController.php(140): CGridView->init()
+#4 D:\warp\wamp\www\framework\web\CBaseController.php(165): CBaseController->createWidget('zii.widgets.gri...', Array)
+#5 D:\warp\wamp\www\widgetvote\protected\views\audit\vlists.php(180): CBaseController->widget('zii.widgets.gri...', Array)
+#6 D:\warp\wamp\www\framework\web\CBaseController.php(119): require('D:\warp\wamp\ww...')
+#7 D:\warp\wamp\www\framework\web\CBaseController.php(88): CBaseController->renderInternal('D:\warp\wamp\ww...', Array, true)
+#8 D:\warp\wamp\www\framework\web\CController.php(866): CBaseController->renderFile('D:\warp\wamp\ww...', Array, true)
+#9 D:\warp\wamp\www\framework\web\CController.php(779): CController->renderPartial('vlists', Array, true)
+#10 D:\warp\wamp\www\widgetvote\protected\controllers\AuditController.php(16): CController->render('vlists', Array)
+#11 D:\warp\wamp\www\framework\web\actions\CInlineAction.php(50): AuditController->actionVlists()
+#12 D:\warp\wamp\www\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#13 D:\warp\wamp\www\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#14 D:\warp\wamp\www\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 D:\warp\wamp\www\framework\web\CWebApplication.php(277): CController->run('vlists')
+#16 D:\warp\wamp\www\framework\web\CWebApplication.php(136): CWebApplication->runController('audit/vlists')
+#17 D:\warp\wamp\www\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#18 D:\warp\wamp\www\widgetvote\index.php(13): CApplication->run()
+#19 {main} REQUEST_URI=/widgetvote/index.php/audit/vlists
+2012/12/11 20:54:39 [error] [exception.CException] exception 'CException' with message '属性 "CLinkColumn.optionsExpression" 未被定义.' in D:\warp\wamp\www\framework\base\CComponent.php:174
+Stack trace:
+#0 D:\warp\wamp\www\framework\YiiBase.php(225): CComponent->__set('optionsExpressi...', Array)
+#1 D:\warp\wamp\www\framework\zii\widgets\grid\CGridView.php(308): YiiBase::createComponent(Array, Object(CGridView))
+#2 D:\warp\wamp\www\framework\zii\widgets\grid\CGridView.php(279): CGridView->initColumns()
+#3 D:\warp\wamp\www\framework\web\CBaseController.php(140): CGridView->init()
+#4 D:\warp\wamp\www\framework\web\CBaseController.php(165): CBaseController->createWidget('zii.widgets.gri...', Array)
+#5 D:\warp\wamp\www\widgetvote\protected\views\audit\vlists.php(180): CBaseController->widget('zii.widgets.gri...', Array)
+#6 D:\warp\wamp\www\framework\web\CBaseController.php(119): require('D:\warp\wamp\ww...')
+#7 D:\warp\wamp\www\framework\web\CBaseController.php(88): CBaseController->renderInternal('D:\warp\wamp\ww...', Array, true)
+#8 D:\warp\wamp\www\framework\web\CController.php(866): CBaseController->renderFile('D:\warp\wamp\ww...', Array, true)
+#9 D:\warp\wamp\www\framework\web\CController.php(779): CController->renderPartial('vlists', Array, true)
+#10 D:\warp\wamp\www\widgetvote\protected\controllers\AuditController.php(16): CController->render('vlists', Array)
+#11 D:\warp\wamp\www\framework\web\actions\CInlineAction.php(50): AuditController->actionVlists()
+#12 D:\warp\wamp\www\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#13 D:\warp\wamp\www\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#14 D:\warp\wamp\www\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 D:\warp\wamp\www\framework\web\CWebApplication.php(277): CController->run('vlists')
+#16 D:\warp\wamp\www\framework\web\CWebApplication.php(136): CWebApplication->runController('audit/vlists')
+#17 D:\warp\wamp\www\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#18 D:\warp\wamp\www\widgetvote\index.php(13): CApplication->run()
+#19 {main} REQUEST_URI=/widgetvote/index.php/audit/vlists
+2012/12/12 02:33:29 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'category_id' cannot be null. The SQL statement executed was: INSERT INTO `tbl_vote_cate_related` (`category_id`, `vote_id`) VALUES (:yp0, :yp1).
+in D:\warp\wamp\www\syslibold\models\ar\adv\CActiveRecordAdv.php (506)
+in D:\warp\wamp\www\syslibold\models\ar\adv\CActiveRecordAdv.php (190)
+in D:\warp\wamp\www\widgetvote\protected\controllers\SiteController.php (49)
+2012/12/12 02:33:29 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'category_id' cannot be null. The SQL statement executed was: INSERT INTO `tbl_vote_cate_related` (`category_id`, `vote_id`) VALUES (:yp0, :yp1)' in D:\warp\wamp\www\framework\db\CDbCommand.php:336
+Stack trace:
+#0 D:\warp\wamp\www\framework\db\ar\CActiveRecord.php(1017): CDbCommand->execute()
+#1 D:\warp\wamp\www\framework\db\ar\CActiveRecord.php(781): CActiveRecord->insert(NULL)
+#2 D:\warp\wamp\www\syslibold\models\ar\adv\CActiveRecordAdv.php(506): CActiveRecord->save(true, NULL)
+#3 D:\warp\wamp\www\syslibold\models\ar\adv\CActiveRecordAdv.php(190): CFormRelationHasMany->save()
+#4 D:\warp\wamp\www\framework\db\ar\CActiveRecord.php(1037): CActiveRecordAdv->afterSave()
+#5 D:\warp\wamp\www\framework\db\ar\CActiveRecord.php(781): CActiveRecord->insert(NULL)
+#6 D:\warp\wamp\www\widgetvote\protected\controllers\SiteController.php(49): CActiveRecord->save()
+#7 D:\warp\wamp\www\framework\web\actions\CInlineAction.php(50): SiteController->actionAdd()
+#8 D:\warp\wamp\www\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#9 D:\warp\wamp\www\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#10 D:\warp\wamp\www\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\warp\wamp\www\framework\web\CWebApplication.php(277): CController->run('add')
+#12 D:\warp\wamp\www\framework\web\CWebApplication.php(136): CWebApplication->runController('site/add')
+#13 D:\warp\wamp\www\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#14 D:\warp\wamp\www\widgetvote\index.php(13): CApplication->run()
+#15 {main} REQUEST_URI=/widgetvote/index.php/site/add
+2012/12/12 02:50:45 [error] [exception.CException] exception 'CException' with message 'SiteController 无法找到请求的视图 "prompt".' in D:\warp\wamp\www\framework\web\CController.php:875
+Stack trace:
+#0 D:\warp\wamp\www\framework\web\CController.php(779): CController->renderPartial('prompt', NULL, true)
+#1 D:\warp\wamp\www\widgetvote\protected\controllers\SiteController.php(51): CController->render('prompt')
+#2 D:\warp\wamp\www\framework\web\actions\CInlineAction.php(50): SiteController->actionAdd()
+#3 D:\warp\wamp\www\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#4 D:\warp\wamp\www\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#5 D:\warp\wamp\www\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\warp\wamp\www\framework\web\CWebApplication.php(277): CController->run('add')
+#7 D:\warp\wamp\www\framework\web\CWebApplication.php(136): CWebApplication->runController('site/add')
+#8 D:\warp\wamp\www\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#9 D:\warp\wamp\www\widgetvote\index.php(13): CApplication->run()
+#10 {main} REQUEST_URI=/widgetvote/index.php/site/add
+2012/12/12 02:58:46 [error] [exception.CException] exception 'CException' with message '属性 "CDbCriteria.auditstate" 未被定义.' in D:\warp\wamp\www\framework\base\CComponent.php:174
+Stack trace:
+#0 D:\warp\wamp\www\framework\db\schema\CDbCriteria.php(153): CComponent->__set('auditstate', 1)
+#1 D:\warp\wamp\www\framework\db\schema\CDbCriteria.php(450): CDbCriteria->__construct(Array)
+#2 D:\warp\wamp\www\framework\db\ar\CActiveRecord.php(210): CDbCriteria->mergeWith(Array)
+#3 D:\warp\wamp\www\widgetvote\protected\controllers\SiteController.php(172): CActiveRecord->__call('listhot', Array)
+#4 D:\warp\wamp\www\widgetvote\protected\controllers\SiteController.php(172): Vote->listhot()
+#5 D:\warp\wamp\www\framework\web\actions\CInlineAction.php(50): SiteController->actionLists()
+#6 D:\warp\wamp\www\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#7 D:\warp\wamp\www\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#8 D:\warp\wamp\www\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\warp\wamp\www\framework\web\CWebApplication.php(277): CController->run('lists')
+#10 D:\warp\wamp\www\framework\web\CWebApplication.php(136): CWebApplication->runController('site/lists')
+#11 D:\warp\wamp\www\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#12 D:\warp\wamp\www\widgetvote\index.php(13): CApplication->run()
+#13 {main} REQUEST_URI=/widgetvote/index.php/site/lists?page=hot&Vote_page=2

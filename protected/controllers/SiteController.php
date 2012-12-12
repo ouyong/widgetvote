@@ -48,9 +48,14 @@ class SiteController extends Controller
 			$vote->setAttributes($_POST['Vote']);
 			$result =$vote->save();
 			if($result) {
-				echo 'success';
+				$this->render('prompt');
 			} else {
-				echo '发布失败';
+				$voteCategory = new VoteCategory();
+				$voteCategorys = $voteCategory->findAll();
+				$this->render('add',array(
+					'model' => $vote,
+					'datas' =>$voteCategorys
+					));
 			}
 			
 		} else {

@@ -9,7 +9,7 @@ class AuditController extends Controller {
 	public function actionVlists() {
 		
 		$vote = new Vote ();
-		$votes = $vote->listbyid ()->search ();
+		$votes = $vote->listbyid()->search ();
 		$this->render ( 'vlists', array (
 				'models' => $votes,
 				'vote' => $vote
@@ -87,17 +87,17 @@ class AuditController extends Controller {
 			$validity = $_POST['validity'];
 			if($validity != 'all') {
 				if($validity == 'long') {
-					//长期有效   未成功
+					//长期有效 
 					$criteria->addCondition("voteendtime=''");
 				}
 				if($validity == 'intime') {
-					//有效期内     未成功
+					//有效期内
 					$nowtime = date('Y-m-d H:i:s',time());
 					$criteria->addCondition("createtime<'".$nowtime."'");
 					$criteria->addCondition("voteendtime>'".$nowtime."'");
 				}
 				if($validity == 'overtime') {
-					//过期      未成功
+					//过期 
 					$nowtime = date('Y-m-d H:i:s',time());
 					$criteria->addCondition("voteendtime<'".$nowtime."'");
 				}
@@ -105,7 +105,20 @@ class AuditController extends Controller {
 		}
 		
 		//根据分类搜索
-		$categoryName = $_POST['categoryName'];
+		if($_POST['categoryName']!=null && $_POST['categoryName']!='') {
+			$categoryName = $_POST['categoryName'];
+			
+			$voteCategory = new VoteCategory();
+			$voteCategory = $voteCategory->findByAttributes(array('categoryname'=>$categoryName));
+			$voteCateRelated = new VoteCateRelated();
+			$voteCateRelateds = $voteCateRelated->findAllByAttributes(array('category_id'=>$voteCategory->id));
+			foreach ($voteCateRelateds as $voteCateRelated) {
+				$arrid[] = $voteCateRelated->vote_id;
+			}
+			$criteria->addInCondition('id', $arrid);
+		}
+		
+		
 		
 		$vote = new Vote();
 		$dataProvider = new CActiveDataProvider($vote, array(
@@ -193,6 +206,7 @@ class AuditController extends Controller {
 	 * 显示投票选择的分类
 	 */
 	public function actionCategory() {
+		echo 'category';
 		/* 
 		$vote = new Vote ();
 		$voteCateRelateds = $vote->voteCateRelateds;

@@ -154,7 +154,6 @@
 				</tr>
 			<?php $this->endWidget();?>
 			</table>
-
 		</div>
 	</div>
 	<div class="twjtp_mask"

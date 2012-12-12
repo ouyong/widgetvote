@@ -33,11 +33,9 @@ class AdminController extends Controller {
 		if(isset($_POST['Vote'])) {
 			$vote = new Vote();
 			$vote->setAttributes($_POST['Vote']);
-// 			var_dump($vote);die;
 			$result =$vote->save();
-// 			var_dump($_POST['Vote']['picpath']);die;
 			if($result) {
-				echo 'success';
+				$this->render('prompt');
 			} else {
 				$voteCategory = new VoteCategory();
 				$voteCategorys = $voteCategory->findAll();

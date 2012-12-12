@@ -90,16 +90,18 @@ class Vote extends ActiveRecord
 		if(!$this->hasErrors())
 		{
 			$file = CUploadedFile::getInstance($this, 'picpath');
-			$extensionName = $file->getExtensionName();
-			
-			$arr = array( 'jpg','jpeg','gif','png' );
-			if( !in_array($extensionName, $arr) ) {
-				$this->addError('picpath','仅支持.jpg /.jpeg /.gif /.png格式');
-			}
-			
-			$size = $file->getSize();
-			if($size > 2000000) {
-				$this->addError('picpath','图片大小不超过2M');
+			if(isset($file)) {
+				$extensionName = $file->getExtensionName();
+				
+				$arr = array( 'jpg','jpeg','gif','png' );
+				if( !in_array($extensionName, $arr) ) {
+					$this->addError('picpath','仅支持.jpg /.jpeg /.gif /.png格式');
+				}
+				
+				$size = $file->getSize();
+				if($size > 2000000) {
+					$this->addError('picpath','图片大小不超过2M');
+				}
 			}
 		}
 	}
@@ -115,17 +117,21 @@ class Vote extends ActiveRecord
 	public function scopes() {
 		return array(
 				'hot' => array(
+						'condition' =>'auditstate=1',
 						'order' => 'counts DESC',
 						'limit' => '4'
 						),
 				'new' => array(
+						'condition' =>'auditstate=1',
 						'order' => 'createtime DESC',
 						'limit' => '4'
 						),
 				'listhot' => array(
+						'condition' =>'auditstate=1',
 						'order' => 'counts DESC',
 						),
 				'listnew' => array(
+						'condition' =>'auditstate=1',
 						'order' => 'createtime DESC',
 						),
 				'listbyid' => array(

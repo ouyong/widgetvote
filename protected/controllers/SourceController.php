@@ -7,7 +7,11 @@ class SourceController extends Controller {
 	 */
 	public function actionVote() {
 		
+		
+		
 	}
+	
+	
 	
 }
 
